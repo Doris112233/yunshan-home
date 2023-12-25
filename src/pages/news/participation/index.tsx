@@ -3,7 +3,7 @@ import { useIntl, setLocale } from 'umi';
 import Grid from '@material-ui/core/Grid';
 import { Card, Divider } from 'antd';
 import './index.less';
-import data from '../../../../data/headpics';
+import data from '../../../data/headpics';
 
 const Tianxing: React.FC = props => {
   const intl = useIntl();
@@ -21,7 +21,7 @@ const Tianxing: React.FC = props => {
         >
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">背 景</div>
+              <div className="tianxing-title">立项理由</div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
@@ -30,7 +30,7 @@ const Tianxing: React.FC = props => {
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">过 程</div>
+              <div className="tianxing-title">项目简介</div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>

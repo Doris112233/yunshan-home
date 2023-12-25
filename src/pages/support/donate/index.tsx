@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useIntl, setLocale } from 'umi';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import data from '../../data/donate';
+import data from '../../../data/donate';
 import { Card } from 'antd';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
