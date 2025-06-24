@@ -1,11 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useIntl, setLocale } from 'umi';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.less';
-import 'swiper/modules/navigation/navigation.less';
-import 'swiper/modules/pagination/pagination.less';
-import 'swiper/modules/autoplay/autoplay.less';
 import { Divider, Button } from 'antd';
 import {
   Grid,
@@ -25,102 +19,27 @@ import { getLocale } from '@@/plugin-locale/localeExports';
 import Container from '@material-ui/core/Container';
 import { CaretRightOutlined, RightCircleOutlined } from '@ant-design/icons';
 
-SwiperCore.use([Navigation, Pagination]);
-
-const IndexSection = props => {
-  const intl = useIntl();
-
-  const { order, img, title, content, link } = props;
-  const renderImg = () => (
-    <img className="index-section-img-content" src={img} />
-  );
-  const renderText = () => (
-    <div className="index-section-text-container">
-      <div className="index-section-title">{title}</div>
-      <div className="index-section-content">{content}</div>
-      <Button type="primary" className="index-section-button">
-        <Link to={link}>{intl.formatMessage({ id: 'home.button.learn' })}</Link>
-      </Button>
-    </div>
-  );
-  return (
-    <div className="index-section">
-      {order === 1 ? (
-        <div className="index-section-img">{renderImg()}</div>
-      ) : (
-        <div className="index-section-text">{renderText()}</div>
-      )}
-      {order === 1 ? (
-        <div className="index-section-text">{renderText()}</div>
-      ) : (
-        <div className="index-section-img">{renderImg()}</div>
-      )}
-    </div>
-  );
-};
+const ellipse1 = data.ellipse1;
+const ellipse2 = data.ellipse2;
+const ellipse3 = data.ellipse3;
+const cards = [
+  { key: 'wild', shortLabel: '野外', longLabel: '野外调查', img: ellipse1 },
+  {
+    key: 'community',
+    shortLabel: '社区',
+    longLabel: '社区保护',
+    img: ellipse2,
+  },
+  { key: 'public', shortLabel: '公众', longLabel: '公众倡导', img: ellipse3 },
+];
 
 const Index: React.FC = props => {
   const intl = useIntl();
-
-  const project_data = [
-    {
-      title: intl.formatMessage({ id: 'home.canteen' }),
-      sub: intl.formatMessage({ id: 'home.canteen.sub' }),
-      content: '',
-      img: data.idx0,
-      link: '/programs/investigation/canteen',
-      phone: 'flex',
-    },
-    {
-      title: intl.formatMessage({ id: 'home.empower' }),
-      sub: intl.formatMessage({ id: 'home.empower.sub' }),
-      content: '',
-      img: data.idx1,
-      link: '/programs/community/lishu',
-      phone: 'flex',
-    },
-    {
-      title: intl.formatMessage({ id: 'home.habitat' }),
-      sub: intl.formatMessage({ id: 'home.habitat.sub' }),
-      content: '',
-      img: data.idx2,
-      link: '/programs/habitat/qingshan',
-      phone: 'flex',
-    },
-    {
-      title: intl.formatMessage({ id: 'home.donate' }),
-      sub: '',
-      content: '',
-      img: data.idx3,
-      link: '/support/month',
-      phone: 'none',
-    },
-  ];
-
-  const story_data = [
-    {
-      title: intl.formatMessage({ id: 'home.eat' }),
-      content: '',
-      img: data.idx4,
-      link: 'https://mp.weixin.qq.com/s/Lf7FqPEk5cz8NW66CEyAFQ',
-    },
-    {
-      title: intl.formatMessage({ id: 'home.tree' }),
-      content: '',
-      img: data.idx5,
-      link: 'https://www.bilibili.com/video/BV1Cb421n7uQ/',
-    },
-    {
-      title: intl.formatMessage({ id: 'home.actions' }),
-      content: '',
-      img: data.idx6,
-      link: 'https://www.bilibili.com/video/BV1nG411V77M/',
-    },
-  ];
+  const [expanded, setExpanded] = useState('wild');
 
   return (
     <div className="full-page">
-      <div className="head-section-container">
+      <div className="section-container section-head">
         <div className="image-head-section">
           <img src={data.headpic} />
         </div>
@@ -161,321 +80,103 @@ const Index: React.FC = props => {
           </Box>
         </div>
       </div>
-      <div className="project-section-container">
-        <div className="project-section-title">
-          <h2>{intl.formatMessage({ id: 'home.sub1' })}</h2>
+
+      <div className="section-container section-why">
+        <div className="why-image-section">
+          <img src={data.map} alt="Gibbon distribution map" />
         </div>
-        <Grid
-          container
-          spacing={2}
-          sx={{
-            height: '100%',
-            padding: {
-              xs: '20px',
-              sm: '20px',
-              md: '30px',
-              lg: '30px',
-            },
-          }}
-        >
-          {project_data.map((item, index) => {
-            return (
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={3}
-                lg={3}
-                sx={{ width: '100%', height: '100%' }}
-                key={index}
-              >
-                <Card
-                  sx={{
-                    display: {
-                      xs: item.phone,
-                      md: 'flex',
-                    },
-                    flexDirection: {
-                      xs: index % 2 === 0 ? 'row' : 'row-reverse',
-                      md: 'column',
-                    },
-                    backgroundColor: '#8bc34a',
-                    height: '100%',
-                  }}
-                >
-                  <CardActionArea
-                    href={item.link}
-                    sx={{
-                      height: '100%',
-                      display: 'flex',
-                      flexDirection: {
-                        xs: index % 2 === 0 ? 'row' : 'row-reverse',
-                        md: 'column',
-                      },
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      image={item.img}
-                      title={item.title}
-                      sx={{
-                        width: {
-                          xs: '50%',
-                          md: '100%',
-                        },
-                        minHeight: { xs: '300px', md: '400px', lg: '450px' },
-                      }}
-                    />
-                    <CardContent
-                      sx={{
-                        flexGrow: 1,
-                        display: 'flex',
-                        padding: {
-                          xs: '15px',
-                          md: '20px',
-                        },
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        width: {
-                          xs: '50%',
-                          md: '100%',
-                        },
-                        minHeight: '100px',
-                      }}
-                    >
-                      <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{
-                          fontSize: {
-                            xs: '15px',
-                            md: '15px',
-                          },
-                          color: 'white',
-                          fontWeight: 'bold',
-                        }}
-                      >
-                        {item.title}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        component="div"
-                        sx={{
-                          display: {
-                            xs: 'block',
-                            md: 'none',
-                          },
-                          color: 'white',
-                          fontSize: {
-                            xs: '12px',
-                            md: '14px',
-                          },
-                          marginTop: '10px',
-                        }}
-                      >
-                        {item.sub} {/* Add a subtitle if needed */}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Grid>
-            );
-          })}
-        </Grid>
+        <div className="why-text-section">
+          <div className="content-title">
+            <h2>{intl.formatMessage({ id: 'home.why.title' })}</h2>
+          </div>
+          <div className="content-desc">
+            <p>{intl.formatMessage({ id: 'home.why.content' })}</p>
+          </div>
+          <div className="content-button-container">
+            <Button className="content-button">
+              <Link to="/protect/archive">
+                <b>{intl.formatMessage({ id: 'home.button.learn' })}</b>
+              </Link>
+            </Button>
+          </div>
+        </div>
       </div>
-      <div className="project-section-container">
-        <div className="project-section-title">
-          <h3>{intl.formatMessage({ id: 'home.sub2' })}</h3>
+
+      <div className="section-container section-work">
+        <div className="work-left">
+          <div className="content-title">
+            <h2>我们的工作</h2>
+          </div>
+          <div className="content-desc">
+            在中国的西南地区，我们坚持了将近10年的野外调查监测、社区保护和科普宣教工作，为相关保护区和林草系统合作伙伴提供了长臂猿保护的科学依据及保护建议，并为公众提供了大量长臂猿科普优质活动和内容。
+          </div>
+          <div className="content-button-container">
+            <Button className="content-button">
+              <Link to="/protect/archive">
+                <b>{intl.formatMessage({ id: 'home.button.learn' })}</b>
+              </Link>
+            </Button>
+          </div>
         </div>
-        <Grid
-          container
-          spacing={{
-            xs: 0,
-            sm: 0,
-            md: 2,
-            lg: 2,
-          }}
-          sx={{
-            height: '100%',
-            padding: {
-              xs: '20px',
-              sm: '20px',
-              md: '30px',
-              lg: '30px',
-            },
-          }}
-        >
-          <Grid
-            item
-            xs={6}
-            sm={6}
-            md={3}
-            lg={3}
-            sx={{ width: '100%', height: '100%' }}
-            key={0}
-            marginBottom={2}
-          >
-            <Card
-              sx={{
-                backgroundColor: '#8bc34a',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-              }}
+        <div className="work-right">
+          {cards.map(card => (
+            <div
+              key={card.key}
+              className={`work-card ${card.key} ${
+                expanded === card.key ? 'expanded' : 'shrunk'
+              }`}
+              onClick={() => setExpanded(card.key)}
             >
-              <CardActionArea href={story_data[0].link} sx={{ height: '100%' }}>
-                <CardMedia
-                  sx={{
-                    height: { xs: '300px', md: '400px', lg: '450px' },
-                    objectFit: 'cover',
-                  }}
-                  image={story_data[0].img}
-                  title={story_data[0].title}
-                />
-                <CardContent
-                  sx={{
-                    height: '100px',
-                    padding: {
-                      xs: '15px',
-                      md: '15px',
-                      lg: '20px',
-                    },
-                    flexGrow: 1,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: 'center',
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{
-                      color: 'white',
-                      fontSize: '15px',
-                      fontWeight: 'bold',
-                    }}
-                  >
-                    {story_data[0].title}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid
-            item
-            xs={6}
-            sm={6}
-            md={3}
-            lg={3}
-            sx={{ width: '100%', height: '100%' }}
-            key={1}
-          >
-            <Card
-              sx={{
-                backgroundColor: '#8bc34a',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-            >
-              <CardActionArea href={story_data[1].link} sx={{ height: '100%' }}>
-                <CardMedia
-                  sx={{
-                    height: { xs: '300px', md: '400px', lg: '450px' },
-                    objectFit: 'cover',
-                  }}
-                  image={story_data[1].img}
-                  title={story_data[1].title}
-                />
-                <CardContent
-                  sx={{
-                    height: '100px',
-                    padding: {
-                      xs: '15px',
-                      md: '15px',
-                      lg: '20px',
-                    },
-                    flexGrow: 1,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: 'center',
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{
-                      color: 'white',
-                      fontSize: '15px',
-                      fontWeight: 'bold',
-                    }}
-                  >
-                    {story_data[1].title}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            md={6}
-            lg={6}
-            sx={{ width: '100%', height: '100%' }}
-            key={2}
-          >
-            <Card
-              sx={{
-                backgroundColor: '#8bc34a',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-            >
-              <CardActionArea href={story_data[2].link} sx={{ height: '100%' }}>
-                <CardMedia
-                  sx={{
-                    height: { xs: '300px', md: '400px', lg: '450px' },
-                    objectFit: 'cover',
-                  }}
-                  image={story_data[2].img}
-                  title={story_data[2].title}
-                />
-                <CardContent
-                  sx={{
-                    height: '100px',
-                    padding: {
-                      xs: '15px',
-                      md: '15px',
-                      lg: '20px',
-                    },
-                    flexGrow: 1,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: 'center',
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{
-                      color: 'white',
-                      fontSize: '15px',
-                      fontWeight: 'bold',
-                    }}
-                  >
-                    {story_data[2].title}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        </Grid>
+              <img src={card.img} alt={card.longLabel} />
+              <div className="work-card-label">
+                <span>
+                  {expanded === card.key ? card.longLabel : card.shortLabel}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="section-story">
+        <div className="story-title">
+          <h2>我们的故事</h2>
+        </div>
+        <div className="story-cards">
+          <div className="story-card">
+            <div className="story-card-image">
+              <img src={data.story1} alt="story1" />
+            </div>
+            <p>
+              长臂猿食堂调查计划 <span className="arrow">{'>'}</span>
+            </p>
+          </div>
+          <div className="story-card">
+            <div className="story-card-image">
+              <img src={data.story2} alt="story2" />
+            </div>
+            <p>
+              社区保护 <span className="arrow">{'>'}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="section-support">
+        <div className="support-content">
+          <div className="content-desc support-desc">
+            <h2>
+              你的所有捐助，都将用于支持我们的长臂猿保护项目，包括栖息地的修复、种群的动态监测，让保护区外的长臂猿可以拥有更好的生活。
+              <br />
+              支持长臂猿保护有一万种姿势，而捐赠，或许是最简单的一种。
+            </h2>
+          </div>
+          <div className="content-button-container">
+            <Button className="content-button">
+              <Link to="/support/month">
+                <b>支持我们</b>
+              </Link>
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );

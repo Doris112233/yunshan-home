@@ -71,80 +71,21 @@ export default defineConfig({
           path: '/programs',
           routes: [
             {
-              path: '/programs/investigation/empower',
-              component: '@/pages/programs/investigation/empower/index',
-            },
-            {
-              path: '/programs/investigation/population',
-              component: '@/pages/programs/investigation/population/index',
-            },
-            {
-              path: '/programs/investigation/habitat',
-              component: '@/pages/programs/investigation/habitat/index',
-            },
-            {
-              path: '/programs/investigation/gene',
-              component: '@/pages/programs/investigation/gene/index',
-            },
-            {
-              path: '/programs/investigation/cloud',
-              component: '@/pages/programs/investigation/cloud/index',
-            },
-            {
               path: '/programs/investigation/canteen',
               component: '@/pages/programs/investigation/canteen/index',
-            },
-            {
-              path: '/programs/community/surround',
-              component: '@/pages/programs/community/surround/index',
             },
             {
               path: '/programs/community/education',
               component: '@/pages/programs/community/education/index',
             },
-            {
-              path: '/programs/community/yingjiang',
-              component: '@/pages/programs/community/yingjiang/index',
-            },
-            {
-              path: '/programs/community/lishu',
-              component: '@/pages/programs/community/lishu/index',
-            },
-            {
-              path: '/programs/habitat/qingshan',
-              component: '@/pages/programs/habitat/qingshan/index',
-            },
           ],
         },
 
-        {
-          path: '/news',
-          routes: [
-            {
-              path: '/news/gibbonday',
-              component: '@/pages/news/gibbonday',
-            },
-            {
-              path: '/news/illegal',
-              component: '@/pages/news/illegal',
-            },
-            {
-              path: '/news/participation',
-              component: '@/pages/news/participation',
-            },
-            {
-              path: '/news/content',
-              component: '@/pages/news/content',
-            },
-            { path: '/news/media', component: '@/pages/news/media' },
-          ],
-        },
         {
           path: '/us',
           routes: [
             { path: '/us/will', component: '@/pages/us/will/index' },
             { path: '/us/council', component: '@/pages/us/council/index' },
-            { path: '/us/team', component: '@/pages/us/team/index' },
             { path: '/us/report', component: '@/pages/report/index' },
             { path: '/us/timeline', component: '@/pages/us/timeline/index' },
             { path: '/us/partner', component: '@/pages/us/partner/index' },

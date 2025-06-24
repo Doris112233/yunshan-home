@@ -9,6 +9,7 @@ import './basicLayout.less';
 import data from '@/data';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 const BasicLayout: React.FC = props => {
   const intl = useIntl();
@@ -42,16 +43,11 @@ const BasicLayout: React.FC = props => {
           name: intl.formatMessage({ id: 'menu.protect' }),
           routes: [
             {
-              path: '/protect/archive',
+              path: '/protect/archive', //关于长臂猿
               name: intl.formatMessage({ id: 'menu.protect.archive' }),
             },
-            // todo
-            // {
-            //   path: '/protect/others',
-            //   name: intl.formatMessage({ id: 'menu.protect.others' }),
-            // },
             {
-              path: '/protect/knowledge',
+              path: '/protect/knowledge', //中国长臂猿
               name: intl.formatMessage({ id: 'menu.protect.knowledge' }),
             },
           ],
@@ -61,88 +57,20 @@ const BasicLayout: React.FC = props => {
           name: intl.formatMessage({ id: 'menu.programs' }),
           routes: [
             {
+              path: '/programs/overview',
+              name: intl.formatMessage({ id: 'menu.programs.overview' }),
+            },
+            {
               path: '/programs/investigation',
               name: intl.formatMessage({ id: 'menu.programs.investigation' }),
-              routes: [
-                {
-                  path: '/programs/investigation/empower',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.investigation.empower',
-                  }),
-                },
-                {
-                  path: '/programs/investigation/population',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.investigation.population',
-                  }),
-                },
-                {
-                  path: '/programs/investigation/habitat',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.investigation.habitat',
-                  }),
-                },
-                {
-                  path: '/programs/investigation/gene',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.investigation.gene',
-                  }),
-                },
-                {
-                  path: '/programs/investigation/cloud',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.investigation.cloud',
-                  }),
-                },
-                {
-                  path: '/programs/investigation/canteen',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.investigation.canteen',
-                  }),
-                },
-              ],
             },
             {
               path: '/programs/community',
               name: intl.formatMessage({ id: 'menu.programs.community' }),
-              routes: [
-                {
-                  path: '/programs/community/surround',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.community.surround',
-                  }),
-                },
-                {
-                  path: '/programs/community/education',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.community.education',
-                  }),
-                },
-                {
-                  path: '/programs/community/yingjiang',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.community.yingjiang',
-                  }),
-                },
-                {
-                  path: '/programs/community/lishu',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.community.lishu',
-                  }),
-                },
-              ],
             },
             {
-              path: '/programs/habitat',
-              name: intl.formatMessage({ id: 'menu.programs.habitat' }),
-              routes: [
-                {
-                  path: '/programs/habitat/qingshan',
-                  name: intl.formatMessage({
-                    id: 'menu.programs.habitat.qingshan',
-                  }),
-                },
-              ],
+              path: '/programs/public',
+              name: intl.formatMessage({ id: 'menu.programs.public' }),
             },
           ],
         },
@@ -157,10 +85,6 @@ const BasicLayout: React.FC = props => {
             {
               path: '/us/council',
               name: intl.formatMessage({ id: 'menu.us.council' }),
-            },
-            {
-              path: '/us/team',
-              name: intl.formatMessage({ id: 'menu.us.team' }),
             },
             {
               path: '/us/report',
@@ -181,36 +105,6 @@ const BasicLayout: React.FC = props => {
           ],
         },
         {
-          path: '/news',
-          name: intl.formatMessage({ id: 'menu.news' }),
-          routes: [
-            {
-              path: '/news/gibbonday',
-              name: intl.formatMessage({
-                id: 'menu.news.public.gibbonday',
-              }),
-            },
-            {
-              path: '/news/illegal',
-              name: intl.formatMessage({ id: 'menu.news.public.illegal' }),
-            },
-            {
-              path: '/news/participation',
-              name: intl.formatMessage({
-                id: 'menu.news.public.participation',
-              }),
-            },
-            {
-              path: '/news/content',
-              name: intl.formatMessage({ id: 'menu.news.public.content' }),
-            },
-            {
-              path: '/news/media',
-              name: intl.formatMessage({ id: 'menu.news.media' }),
-            },
-          ],
-        },
-        {
           path: '/support',
           name: intl.formatMessage({ id: 'menu.support' }),
           routes: [
@@ -218,22 +112,42 @@ const BasicLayout: React.FC = props => {
               path: '/support/month',
               name: intl.formatMessage({ id: 'menu.support.month' }),
             },
-            // {
-            //   path: '/support/intern',
-            //   name: intl.formatMessage({ id: 'menu.support.intern' }),
-            // },
           ],
         },
       ],
     },
   };
 
+  const socialMedia = [
+    {
+      key: 'bilibili',
+      icon: data.s1,
+      url: 'https://b23.tv/bVXLkrZ',
+    },
+    {
+      key: 'xhs',
+      icon: data.s2,
+      url:
+        'https://www.xiaohongshu.com/user/profile/60cc71a4000000002002426f?xsec_token=YBYweue-FokO75WBpRSTWm69O6Mc1iIAItOFgBYxyF6Lc%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=60cc71a4000000002002426f&apptime=1749802513&share_id=76717db7e87f4f21839353f1e413726e&share_channel=copy_lin',
+    },
+    {
+      key: 'wechat',
+      icon: data.s3,
+      url: 'https://mp.weixin.qq.com/s/tcVLbmmw3iV0eVbP9A0KGw',
+    },
+    {
+      key: 'weibo',
+      icon: data.s4,
+      url: 'https://weibo.com/u/5823202811',
+    },
+  ];
   return (
     <ProLayout
       {...props}
       {...routesProps}
       layout="topmenu"
       navTheme="light"
+      fixedHeader={true}
       title="云山保护"
       logo={logo}
       onMenuHeaderClick={() => history.push('/')}
@@ -257,7 +171,7 @@ const BasicLayout: React.FC = props => {
             setPathname('/');
           }}
         >
-          <div style={{ marginLeft: '1rem' }}>{logo}</div>
+          <div className="logo-container">{logo}</div>
         </Link>
       )}
       rightContentRender={() => (
@@ -271,95 +185,47 @@ const BasicLayout: React.FC = props => {
       )}
       footerRender={() => {
         return (
-          <div className="footer">
-            <img
-              className="footer-img"
-              src={data.background}
-              alt="Background"
-            />
-            <div
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'space-between',
-                alignItems: 'flex-start',
-                position: 'relative',
-                zIndex: 2,
-              }}
-            >
-              <div className="footer_column">
-                <div className="follow">
-                  <h4>{intl.formatMessage({ id: 'footer.follow' })}</h4>
-                </div>
-                <div className="social_med">
-                  <div>
-                    <img
-                      src={data.s1}
-                      alt="bilibili"
-                      style={{ width: '60px', height: '60px' }}
-                    />
-                    <p>Bilibili</p>
-                  </div>
-                  <div>
-                    <img
-                      src={data.s2}
-                      alt="xhs"
-                      style={{ width: '60px', height: '60px' }}
-                    />
-                    <p>
-                      {intl.formatMessage({ id: 'footer.xhs.line1' })}
-                      <br />
-                      {intl.formatMessage({ id: 'footer.xhs.line2' })}
-                    </p>
-                  </div>
-                  <div>
-                    <img
-                      src={data.s3}
-                      alt="wechat"
-                      style={{ width: '60px', height: '60px' }}
-                    />
-                    <p>{intl.formatMessage({ id: 'footer.wechat' })}</p>
-                  </div>
-                  <div>
-                    <img
-                      src={data.s4}
-                      alt="微博"
-                      style={{ width: '60px', height: '60px' }}
-                    />
-                    <p>{intl.formatMessage({ id: 'footer.weibo' })}</p>
-                  </div>
-                </div>
+          <div className="section-footer">
+            <div className="footer_left">
+              <div className="follow">
+                <h4>{intl.formatMessage({ id: 'footer.follow' })}</h4>
               </div>
+              <Grid
+                container
+                spacing={3}
+                justifyContent="center"
+                alignItems="center"
+              >
+                {socialMedia.map(item => (
+                  <Grid item key={item.key}>
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="social-icon"
+                        src={item.icon}
+                        alt={item.key}
+                      />
+                    </a>
+                  </Grid>
+                ))}
+              </Grid>
+            </div>
 
-              <div className="footer_column">
-                <div className="contact">
-                  <h4 style={{ textAlign: 'center' }}>
-                    {intl.formatMessage({ id: 'footer.contact' })}
-                  </h4>
-                  <p>{intl.formatMessage({ id: 'footer.address' })}</p>
-                  <p>{intl.formatMessage({ id: 'footer.tel' })}</p>
-                  <p>{intl.formatMessage({ id: 'footer.site' })}</p>
-                  <p>{intl.formatMessage({ id: 'footer.email' })}</p>
-                </div>
+            <div className="footer_right">
+              <div className="contact">
+                <h4 style={{ textAlign: 'center' }}>
+                  {intl.formatMessage({ id: 'footer.contact' })}
+                </h4>
+                <p>{intl.formatMessage({ id: 'footer.address' })}</p>
+                <p>{intl.formatMessage({ id: 'footer.tel' })}</p>
+                <p>{intl.formatMessage({ id: 'footer.site' })}</p>
+                <p>{intl.formatMessage({ id: 'footer.email' })}</p>
               </div>
             </div>
           </div>
-          // <DefaultFooter
-          //   copyright={intl.formatMessage({ id: 'footer.copyright' })}
-          //   links={[
-          //     {
-          //       key: 'yunshan',
-          //       title: intl.formatMessage({ id: 'footer.yunshan' }),
-          //       href: 'http://www.cloudmountain.cn/',
-          //       blankTarget: true,
-          //     },
-          //     {
-          //       key: 'mail',
-          //       title: <MailOutlined />,
-          //       href: 'mailto:info@cloudmountain.cn',
-          //     },
-          //   ]}
-          // />
         );
       }}
     >
