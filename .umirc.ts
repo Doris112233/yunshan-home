@@ -71,6 +71,10 @@ export default defineConfig({
           path: '/programs',
           routes: [
             {
+              path: '/programs/overview',
+              component: '@/pages/programs/overview/index',
+            },
+            {
               path: '/programs/investigation/canteen',
               component: '@/pages/programs/investigation/canteen/index',
             },
