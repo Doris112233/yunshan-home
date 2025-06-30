@@ -21,3 +21,5 @@
 
 # assets (large files)
 /src/data/assets/
+/src/pages/report/asset/reports/*.pdf
+/src/pages/protect/archive/audio/*.mp3
