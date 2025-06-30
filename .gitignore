@@ -19,7 +19,7 @@
 /src/.umi-test
 /.env.local
 
-# assets (large files)
-/src/data/assets/
-/src/pages/report/asset/reports/*.pdf
+# Large files that cause Git push issues
+# Only ignore the largest files, keep smaller ones for website functionality
+/src/data/assets/reports/*.pdf
 /src/pages/protect/archive/audio/*.mp3
