@@ -112,7 +112,7 @@ const Index: React.FC = props => {
           </div>
           <div className="content-button-container">
             <Button className="content-button">
-              <Link to="/protect/archive">
+              <Link to="/programs/overview">
                 <b>{intl.formatMessage({ id: 'home.button.learn' })}</b>
               </Link>
             </Button>

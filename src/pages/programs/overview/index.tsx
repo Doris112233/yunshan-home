@@ -50,16 +50,6 @@ const Overview: React.FC = () => {
       </div>
 
       <div className="overview-image">
-        {/* <Grid container spacing={3} direction="column" justifyContent="center" alignItems="center">
-          <Grid item xs={12} sm={6} md={4}>
-            {cards.map((card, index) => (
-              <div key={index} className="overview-image-card">
-                <img src={card.img} alt={card.title} />
-                <h3>{card.title}</h3>
-              </div>
-            ))}
-          </Grid>
-        </Grid> */}
         <Grid container spacing={4} justifyContent="center">
           {cards.map((card, index) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
