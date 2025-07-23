@@ -84,25 +84,6 @@ const Timeline: React.FC = props => {
   };
 
   return (
-    // <div className="full-page">
-    //   <Grid container justify="center">
-    //     <Grid xs={12} sm={12} md={10}>
-    //       <Card>
-    //         <Grid
-    //           container
-    //           direction="column"
-    //           justify="center"
-    //           alignItems="center"
-    //         >
-    //           <Grid item xs={12} sm={8}>
-    //             <div className="timeline-title">{'云山大事记'}</div>
-    //             <div className="timeline-box">{renderTimeline()}</div>
-    //           </Grid>
-    //         </Grid>
-    //       </Card>
-    //     </Grid>
-    //   </Grid>
-    // </div>
     <div className="row example-split">
       {/* <Card> */}
       <div className="col-md-12 example-title">

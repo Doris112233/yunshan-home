@@ -19,7 +19,12 @@
 /src/.umi-test
 /.env.local
 
-# Large files that cause Git push issues
-# Only ignore the largest files, keep smaller ones for website functionality
-/src/data/assets/reports/*.pdf
-/src/pages/protect/archive/audio/*.mp3
+# Additional large files to consider excluding for remote push
+# Uncomment the lines below if you want to reduce repository size
+public/reports/*.pdf
+# public/images/programs/ov*.png
+# public/images/index/story*.png
+public/audio
+
+# Option: Ignore ALL public files (uncomment if using external asset hosting)
+# public/

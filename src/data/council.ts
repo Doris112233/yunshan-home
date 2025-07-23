@@ -1,12 +1,12 @@
-import dl from './assets/council/dl.png';
-import fpf from './assets/council/fpf.png';
-import gzh from './assets/council/gzh.png';
-import zgy from './assets/council/zgy.jpg';
-import ly from './assets/council/ly.png';
-import txf from './assets/council/txf.png';
-import yl from './assets/council/yl.png';
-import zc from './assets/council/zc.png';
-import zjs from './assets/council/zjs.png';
+import dl from '../../public/images/council/dl.png';
+import fpf from '../../public/images/council/fpf.png';
+import gzh from '../../public/images/council/gzh.png';
+import zgy from '../../public/images/council/zgy.jpg';
+import ly from '../../public/images/council/ly.png';
+import txf from '../../public/images/council/txf.png';
+import yl from '../../public/images/council/yl.png';
+import zc from '../../public/images/council/zc.png';
+import zjs from '../../public/images/council/zjs.png';
 
 const data = [
   {

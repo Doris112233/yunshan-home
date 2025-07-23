@@ -46,7 +46,6 @@ const Report: React.FC<ReportProps> = props => {
     return (
       <Modal
         className="report-pic-viewer"
-        visible={picModal}
         footer={null}
         onCancel={() => setPicModal(false)}
       >
@@ -96,7 +95,7 @@ const Report: React.FC<ReportProps> = props => {
             >
               <Slider
                 style={{ height: '100vh', marginTop: '20px' }}
-                tooltipVisible={false}
+                // tooltipVisible={false}
                 marks={masksBig}
                 defaultValue={curr}
                 vertical
@@ -112,7 +111,7 @@ const Report: React.FC<ReportProps> = props => {
             <div style={{ height: '70vh', overflow: 'scroll' }}>
               <Slider
                 style={{ height: '100vh' }}
-                tooltipVisible={false}
+                // tooltipVisible={false}
                 marks={masksSmall}
                 defaultValue={curr}
                 vertical
@@ -132,7 +131,7 @@ const Report: React.FC<ReportProps> = props => {
           className="report-box"
           container
           direction="column"
-          justify="flex-start"
+          justifyContent="flex-start"
           alignItems="center"
         >
           <Grid item xs={12} style={{ margin: 'auto' }}>
@@ -140,6 +139,18 @@ const Report: React.FC<ReportProps> = props => {
           </Grid>
           <Grid item>
             <div className="report-tip">{'点击封面阅读'}</div>
+          </Grid>
+          <Grid item>
+            {data[curr].href && data[curr].down && (
+              <Button
+                type="primary"
+                href={data[curr].href}
+                download={data[curr].down}
+                style={{ marginTop: 16, borderRadius: 10 }}
+              >
+                下载报告
+              </Button>
+            )}
           </Grid>
         </Grid>
       </Grid>

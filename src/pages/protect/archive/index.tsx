@@ -13,12 +13,12 @@ import { Spin } from 'antd';
 
 // const hoAu = require('./audio/Hoolock_tianxing.mp3');
 
-import tianxing from './audio/Hoolock_tianxing.mp3';
-import lar from './audio/Hylobates_lar.mp3';
-import concolor from './audio/Nomascus_concolor.mp3';
-import hainanus from './audio/Nomascus_hainanus.mp3';
-import leucogenys from './audio/Nomascus_leucogenys.mp3';
-import nasutus from './audio/Nomascus_nasutus.mp3';
+import tianxing from '../../../../public/audio/archive/Hoolock_tianxing.mp3';
+import lar from '../../../../public/audio/archive/Hylobates_lar.mp3';
+import concolor from '../../../../public/audio/archive/Nomascus_concolor.mp3';
+import hainanus from '../../../../public/audio/archive/Nomascus_hainanus.mp3';
+import leucogenys from '../../../../public/audio/archive/Nomascus_leucogenys.mp3';
+import nasutus from '../../../../public/audio/archive/Nomascus_nasutus.mp3';
 
 const audios = [
   new Audio(tianxing),
@@ -80,27 +80,22 @@ export default props => {
       <section className="section-archeology">
         <div className="section-archeology-container"></div>
         <div className="section-archeology-header">
-          <h1>长臂猿在中国</h1>
+          <h1>{intl.formatMessage({ id: 'protect.inChina.title' })}</h1>
         </div>
         <div className="section-archeology-content">
           <div className="text-section">
-            <p>
-              出土文物显示，2700多年前，长臂猿曾广泛存在于中国各地的森林中，甚至在黄河流域都有记录。对于中国人来说，猿的形象自古以来就存在于我们的生活里，在文人墨客的作品中，是我们无法抹去的文化记忆。
-            </p>
-            <p>
-              然而，如今长臂猿只能在云南、广西、海南和西藏有分布，总数不超过1800只。
-            </p>
+            <p>{intl.formatMessage({ id: 'protect.inChina.content.1' })}</p>
+            <p>{intl.formatMessage({ id: 'protect.inChina.content.2' })}</p>
             <div className="image-row">
-              <img src={dataArchaeo.archaeo1} alt="长臂猿在树上" />
+              <img
+                src={dataArchaeo.archaeo1}
+                alt={intl.formatMessage({ id: 'protect.inChina.content.3' })}
+              />
               <div className="side-text">
-                <p>
-                  作为森林里的旗舰物种，长臂猿的存在在一定程度上标志着森林的健康状况。它们依赖于森林提供的食物，加之鸣声较容易被监测到，长臂猿可作为森林状况恶化的预警——它们的消失即意味着森林不再健康。
-                </p>
+                <p>{intl.formatMessage({ id: 'protect.inChina.content.4' })}</p>
               </div>
             </div>
-            <p>
-              更重要的是，长臂猿生存的森林生态系统是我国生物多样性最为丰富的地区，保护长臂猿就像撑开了一把保护伞，间接保护了生活在同一区域的其他生物。
-            </p>
+            <p>{intl.formatMessage({ id: 'protect.inChina.content.5' })}</p>
           </div>
           <div className="vertical-image">
             <img src={dataArchaeo.archaeo2} alt="青铜长臂猿" />
@@ -111,7 +106,7 @@ export default props => {
         <Grid
           container
           direction="column"
-          justify="flex-start"
+          justifyContent="flex-start"
           alignItems="center"
         >
           <Grid
@@ -120,8 +115,8 @@ export default props => {
             xs={12}
             sm={10}
             md={8}
-            direction={{ xs: 'column', md: 'row' }}
-            justify="flex-start"
+            direction="column"
+            justifyContent="flex-start"
             alignItems="center"
           >
             <Grid item xs={2} sm={3} md={3}>
@@ -142,21 +137,19 @@ export default props => {
                 style={{ marginTop: 30 }}
                 tabPosition="top"
                 type="card"
-              >
-                {data.map(item => (
-                  <Tabs.TabPane
-                    tab={intl.formatMessage({ id: item.name })}
-                    key={item.key.toString()}
-                  />
-                ))}
-              </Tabs>
+                items={data.map(item => ({
+                  key: item.key.toString(),
+                  label: intl.formatMessage({ id: item.name }),
+                  children: null,
+                }))}
+              />
             </Grid>
           </Grid>
           <Grid
             item
             xs={12}
             container
-            justify="center"
+            justifyContent="center"
             alignItems="flex-start"
             spacing={2}
           >
@@ -211,13 +204,6 @@ export default props => {
                         id: data[selected].classification.genus,
                       })}
                     </Text>
-                    {/*<Text>*/}
-                    {/*  {intl.formatMessage({ id: 'protect.archive.family' })}*/}
-                    {/*</Text>*/}
-                    {/*<Text>{intl.formatMessage({id: data[selected].classification.genus})}</Text>*/}
-                    {/*<Text>*/}
-                    {/*  {intl.formatMessage({ id: 'protect.archive.genera' })}*/}
-                    {/*</Text>*/}
                   </Item>
                   <Item
                     label={

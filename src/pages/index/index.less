@@ -29,12 +29,12 @@
   }
 
   &.section-head {
-    background-color: #8bc34a;
+    background-color: @primary-color;
   }
 }
 
 .text-head-section {
-  background-color: #8bc34a; /* Green background */
+  background-color: @primary-color; /* Green background */
   //padding: 100px;
   box-sizing: border-box;
   display: flex;
@@ -111,6 +111,7 @@
 }
 
 .image-head-section {
+  overflow: clip;
   @media (max-width: 767px) {
     width: 100%;
     height: 50%;
@@ -125,12 +126,16 @@
     height: 100%;
     float: right;
   }
-}
-
-.image-head-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
 
 .content-section-title {
@@ -215,7 +220,7 @@
 
 .content-button {
   align-self: center;
-  background-color: #8bc34b;
+  background-color: @primary-color;
   border: none;
   color: white;
   border-radius: 20px;
@@ -253,15 +258,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  border-bottom: 4px solid #7fc242;
+  border-bottom: 4px solid @primary-color;
   display: inline-block;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
   text-align: center;
   h2 {
     font-size: 25px;
     font-weight: 600;
-    letter-spacing: 2.5px;
+    // letter-spacing: 2.5px;
     margin: 0;
     @media (max-width: 767px) {
       font-size: 20px;
@@ -270,12 +273,12 @@
 }
 
 .content-desc {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #000;
   margin-bottom: 60px;
   line-height: 2em;
-  letter-spacing: 2px;
+  //letter-spacing: 2px;
   @media (max-width: 767px) {
     font-size: 15px;
   }
@@ -289,7 +292,7 @@
   h2 {
     font-size: 20px;
     font-weight: 600;
-    letter-spacing: 2.5px;
+    //letter-spacing: 2.5px;
     margin: 0;
     text-align: center;
     @media (max-width: 767px) {
@@ -302,7 +305,7 @@
 .content-btn {
   width: 145px;
   height: 50px;
-  background: #8bc34b;
+  background: @primary-color;
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -352,7 +355,7 @@
   font-size: 20px;
   font-weight: 500;
   color: #000;
-  letter-spacing: 10px;
+  //letter-spacing: 10px;
   text-orientation: mixed;
   transition: font-size 0.4s;
 }
@@ -431,34 +434,10 @@
       writing-mode: horizontal-tb;
     }
   }
-  // .work-card, .work-card.expanded{
-  //   margin-top: 20px;
-  //   width: 100%;
-  //   height: 250px;
-  //   flex: none;
-  //   flex-direction: column;
-  //   justify-content: flex-start;
-  //   align-items: center;
-  // }
+
   .work-card-label {
     padding-bottom: 10px;
   }
-  // .work-card.expanded img{
-  //   height: 200px;
-  //   width: 90%;
-  //   margin-top: 15px;
-  //   border-radius: 20px;
-  //   object-fit: cover;
-  //   margin-bottom: 10px;
-  // }
-  // .work-card.shrunk span{
-  //   font-size: 15px;
-  //   writing-mode: horizontal-tb;
-  // }
-  // .work-card.expanded span{
-  //   font-size: 20px;
-  //   writing-mode: horizontal-tb;
-  // }
 }
 
 .section-story {
@@ -476,15 +455,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    border-bottom: 4px solid #7fc242;
+    border-bottom: 4px solid @primary-color;
     display: inline-block;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
     text-align: center;
+    padding: 0 50px;
     h2 {
       font-size: 25px;
       font-weight: 600;
-      letter-spacing: 2.5px;
+      //letter-spacing: 2.5px;
       margin: 0;
       @media (max-width: 767px) {
         font-size: 20px;
@@ -530,7 +508,7 @@
     .story-card-image {
       width: 100%;
       overflow: clip;
-      height: 353px;
+      // height: 353px;
       object-fit: cover;
     }
     img {
@@ -551,7 +529,7 @@
       font-family: Inter, sans-serif;
       font-weight: 600;
       font-size: 20px;
-      letter-spacing: 0.2em;
+      //letter-spacing: 0.2em;
       color: #000000;
       margin-top: 20px;
       @media (max-width: 767px) {
@@ -562,8 +540,8 @@
     .arrow {
       font-size: 25px;
       font-weight: 600;
-      letter-spacing: 0.2em;
-      color: #7fc242;
+      //letter-spacing: 0.2em;
+      color: @primary-color;
     }
 
     a {

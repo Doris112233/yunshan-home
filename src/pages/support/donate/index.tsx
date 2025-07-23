@@ -43,7 +43,12 @@ const Donate: React.FC = props => {
 
   return (
     <div className="full-page">
-      <Grid container direction="column" justify="center" alignItems="center">
+      <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Grid item xs={12} sm={10} md={8}>
           {renderSwiper()}
         </Grid>

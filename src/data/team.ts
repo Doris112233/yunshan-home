@@ -1,11 +1,10 @@
-import ly from './assets/team/ly.jpeg';
-import cjy from './assets/team/cjy.jpeg';
-import gs from './assets/team/gs.jpg';
-import nyb from './assets/team/nyb.jpeg';
-import yl from './assets/team/yl.jpeg';
-import xx from './assets/team/xx.jpeg';
-import yh from './assets/team/yh.jpeg';
-import qjr from './assets/team/qjr.jpeg';
+import cjy from '../../public/images/team/cjy.jpeg';
+import gs from '../../public/images/team/gs.jpg';
+import nyb from '../../public/images/team/nyb.jpeg';
+import yl from '../../public/images/team/yl.jpeg';
+import xx from '../../public/images/team/xx.jpeg';
+import yh from '../../public/images/team/yh.jpeg';
+import qjr from '../../public/images/team/qjr.jpeg';
 
 const data = [
   {

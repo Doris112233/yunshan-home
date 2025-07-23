@@ -1,5 +1,5 @@
-import archaeo1 from './assets/archive/archaeo1.jpg';
-import archaeo2 from './assets/archive/archaeo2.jpg';
+import archaeo1 from '../../public/images/archive/archaeo1.jpg';
+import archaeo2 from '../../public/images/archive/archaeo2.jpg';
 
 const data = {
   archaeo1: archaeo1,

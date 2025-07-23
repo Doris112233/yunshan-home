@@ -15,10 +15,11 @@
 
 .overview-title {
   display: flex;
-  border-bottom: 4px solid #7fc242;
+  border-bottom: 4px solid @primary-color;
   display: inline-block;
   text-align: center;
   margin: 0 0 40px 0;
+  padding: 0 50px 5px 50px;
   h2 {
     font-size: 25px;
     font-weight: 600;
@@ -31,9 +32,9 @@
 }
 
 .overview-content {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  //   letter-spacing: 2px;
+  color: #000;
   line-height: 2;
   width: 80%;
   padding-bottom: 0px;
@@ -51,17 +52,6 @@
   background-color: #fff;
   padding-bottom: 150px;
 }
-
-// .overview-image-card {
-//   width: 400px;
-//   height: 400px;
-//   img {
-//     width: 300px;
-//     height: 300px;
-//     object-fit: cover;
-//     border-radius: 200px;
-//   }
-// }
 
 .overview-image-card {
   position: relative;

@@ -25,7 +25,7 @@ const Contact: React.FC = props => {
         sm={10}
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         spacing={2}
       >
@@ -46,7 +46,7 @@ const Contact: React.FC = props => {
           item
           container
           direction="row"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={1}
         >
@@ -62,7 +62,7 @@ const Contact: React.FC = props => {
           xs={12}
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={2}
         >
@@ -111,7 +111,7 @@ const Contact: React.FC = props => {
           item
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={3}
         >
@@ -119,7 +119,7 @@ const Contact: React.FC = props => {
             item
             container
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
             spacing={1}
           >
@@ -129,7 +129,7 @@ const Contact: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -146,7 +146,7 @@ const Contact: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -165,7 +165,7 @@ const Contact: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -182,7 +182,7 @@ const Contact: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -199,7 +199,7 @@ const Contact: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -217,7 +217,7 @@ const Contact: React.FC = props => {
             item
             container
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
             spacing={1}
           ></Grid>
@@ -227,22 +227,20 @@ const Contact: React.FC = props => {
   };
 
   return (
-    <div className="full-page">
-      <Grid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-        spacing={2}
-      >
-        <Grid item xs={12} sm={12} md={8}>
-          <Card>
-            {renderContact()}
-            {renderMedia()}
-          </Card>
-        </Grid>
+    <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      spacing={2}
+    >
+      <Grid item xs={12} sm={12} md={8}>
+        <Card>
+          {renderContact()}
+          {renderMedia()}
+        </Card>
       </Grid>
-    </div>
+    </Grid>
   );
 };
 

@@ -15,7 +15,7 @@ const Media: React.FC = props => {
       md={8}
       container
       direction="column"
-      justify="flex-start"
+      justifyContent="flex-start"
       alignItems="flex-start"
       spacing={2}
     >
@@ -73,7 +73,7 @@ const Media: React.FC = props => {
       md={8}
       container
       direction="column"
-      justify="flex-start"
+      justifyContent="flex-start"
       alignItems="flex-start"
       spacing={2}
     >
@@ -116,7 +116,7 @@ const Media: React.FC = props => {
         <Grid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={2}
         >
@@ -132,7 +132,7 @@ const Media: React.FC = props => {
         <Grid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={2}
         >

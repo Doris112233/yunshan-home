@@ -11,6 +11,7 @@ export default {
   'menu.programs.public': '公众传播',
 
   'menu.us': '关于云山',
+  'menu.us.overview': '关于云山',
   'menu.us.will': '使命愿景',
   'menu.us.council': '理事会',
   'menu.us.report': '年报月报',
@@ -30,26 +31,28 @@ export default {
   'home.description':
     '我们以保护长臂猿等中国的濒危旗舰物种为突破口，进而保护生物多样性最为丰富的西南森林生态系统\n',
   'home.support': '支持我们',
+  'home.support.content':
+    '你的所有捐助，都将用于支持我们的长臂猿保护项目，包括栖息地的修复、种群的动态监测，让保护区外的长臂猿可以拥有更好的生活。\n\n支持长臂猿保护有一万种姿势，而捐赠，或许是最简单的一种。',
   'home.button.learn': '了解更多',
-  'home.canteen': '长臂猿食堂调查',
-  'home.canteen.sub': '天行长臂猿食性与习性调研',
-  'home.empower': '社区保护与赋能',
-  'home.empower.sub': '和傈僳族老乡一起保护家乡的长臂猿',
-  'home.habitat': '长臂猿栖息地恢复与质量提升',
-  'home.habitat.sub': '长臂猿栖息地恢复与质量提升',
-  'home.donate': '月捐保护中国猿',
-  'home.eat': '如果不能把低海拔的栖息地让给它们，至少要让它们吃得更好',
-  'home.tree': '种树两年多，长臂猿的家怎么样了',
-  'home.actions': '大熊猫有 1864 只，但它们只有不到 150 只',
-  'home.sub1': '保护行动',
-  'home.sub2': '我们的故事',
   'home.why.title': '为什么是长臂猿',
   'home.why.content':
     '中国现存7种长臂猿，总数不超过2000只。\n\n长臂猿生存的热带和亚热带森林生态系统是中国生物多样性最为丰富的地区，保护它们就像撑开了一把保护伞，间接保护了生活在同一区域的其它生物。',
   'home.why.button': '了解更多',
+  'home.work.title': '我们的工作',
+  'home.work.content':
+    '在中国的西南地区，我们坚持了将近10年的野外调查监测、社区保护和科普宣教工作，为相关保护区和林草系统合作伙伴提供了长臂猿保护的科学依据及保护建议，并为公众提供了大量长臂猿科普优质活动和内容。',
+
+  // Work cards labels
+  'home.work.card.wild.short': '野外',
+  'home.work.card.wild.long': '野外调查',
+  'home.work.card.community.short': '社区',
+  'home.work.card.community.long': '社区保护',
+  'home.work.card.public.short': '公众',
+  'home.work.card.public.long': '公众倡导',
+
   'home.story.title': '我们的故事',
-  'home.story.card1': '长臂猿食堂调查计划 >',
-  'home.story.card2': '社区保护 >',
+  'home.story.card1': '长臂猿食堂调查计划',
+  'home.story.card2': '社区保护',
 
   'about.mission': '使命',
   'about.vision': '愿景',
@@ -64,88 +67,349 @@ export default {
   'about.slogan.1': '和云山一起保护中国猿',
   'about.focusing.1': '十年内在社区保护地实现长臂猿种群净增长',
 
-  'programs.reason': '立项理由',
-  'programs.description': '项目简介与成果',
-  'programs.learn': '了解更多',
+  'protect.inChina.title': '长臂猿在中国',
+  'protect.inChina.content.1':
+    '长臂猿在中国有着悠久的历史。早在2700多年前，长臂猿就生活在中国的许多地方，包括黄河流域。根据考古证据，长臂猿的分布范围非常广泛，从北方的黄河流域到南方的海南岛都有它们的足迹。',
+  'protect.inChina.content.2':
+    '对于中国人来说，长臂猿是文化与历史的重要组成部分。它们经常出现在古代诗歌和绘画中，是中华民族文化记忆中永恒的象征。',
+  'protect.inChina.content.3':
+    '然而，如今，长臂猿只能在几个省份找到：云南、广西、海南和西藏。总数量不到1800只。',
+  'protect.inChina.content.4':
+    '作为森林的旗舰物种，长臂猿的存在反映了栖息地的整体健康状况。它们依赖森林获取食物，其响亮的叫声很容易被科学家发现。当长臂猿消失时，通常意味着森林不再健康。',
+  'protect.inChina.content.5':
+    '更重要的是，长臂猿生活的森林是中国生物多样性最丰富的地区之一。保护长臂猿有助于保护生活在同一生态系统中的许多其他物种，就像打开了一把保护伞，为生活在其下的生命提供庇护。',
 
-  'programs.investigation.canteen.reason.1':
-    '在天行长臂猿的主要分布区——云南省德宏傣族景颇族自治州盈江县，云山保护联合云南铜壁关省级自然保护区开展了一次种群空缺调查，调查发现盈江县的天行长臂猿绝大部分种群分布在保护区外的国有林、集体林和个人林里。\n',
-  'programs.investigation.canteen.reason.2':
-    '其中盈江县苏典乡拉马河片区的天行长臂猿种群的分布情况对保护来说格外具有价值。这里的栖息地破碎化严重，然而在约13平方公里的范围内却生活着5个家庭群和2只独猿，这里的长臂猿们的活动范围比高黎贡国家级自然保护区内的天行长臂猿种群还要集中。有充分的证据表明，像拉马河片区这样保护区外的栖息地比保护区内受到了更多人为干扰因素如道路、砍伐、森林退化、周边社区开展日常生产生活活动等造成的影响，但为何这里却承载着盈江县分布最集中的天行长臂猿种群？\n',
-  'programs.investigation.canteen.reason.3':
-    '我们针对上面的问题提出一个可能的答案——保护区外存在的人为干扰、栖息地退化等因素虽然对长臂猿的生存构成了负面影响，但同时也对天行长臂猿的潜在食物竞争者起到了抑制作用，特别是其他灵长类动物；从而使得保护区外的天行长臂猿比如拉马河片区的种群的取食竞争压力小于保护区内。\n',
-  'programs.investigation.canteen.reason.4':
-    '为了验证这个猜想，我们希望在盈江县拉马河片区的天行长臂猿栖息地内开展一次针对长臂猿食堂的调查。我们将选取每个季节对于天行长臂猿最重要的食物树种，通过在林层系统布设红外相机，记录食物树被取食的全过程和所有的取食者，并和保护区内的相关数据进行对比。\n',
-  'programs.investigation.canteen.description.1':
-    '2022年9月，通过腾讯公益"99公益日"的筹款，我们开展了"长臂猿食堂调查计划"。通过林层红外相机调查，可以对已有的保护区内天行长臂猿的食性数据进行验证，收集未习惯化的长臂猿种群的取食行为数据，并得到一个在天行长臂猿的食堂干饭的物种名单，最终从食物的角度对于栖息地恢复提出建议。',
-  'programs.investigation.canteen.description.2':
-    '截至2024年3月，云山团队通过"长臂猿食堂调查计划"布设了295台次的红外相机，拍摄了29万个共计12TB的红外影像文件。拍摄到三个长臂猿家庭群取食多次，以及50余种鸟类和包括蜂猴、猕猴在内的20余种其他兽类取食的画面。此外，相机还拍摄到了两个家庭群新生的婴猿，在我们认为长臂猿不会去的次生林和高海拔地区也拍到了长臂猿。',
-  'programs.investigation.canteen.description.3':
-    '上述收集回来的庞大数据，需要由志愿者进行分拣、识别。项目开始之后，我们同时进行了红外志愿者的招募工作，让对于物种保护感兴趣，但并非科班出身的大众也能够贡献自己的力量。截至目前（2024年5月），已开展七轮红外相机布设工作，共有180余人报名并参与线上工作培训成为志愿者。相较于2023年，在2024年我们扩展了调查区域，通过长期监测了解清楚这个片区长臂猿的活动范围特别是取食范围和规律、每个家庭群的家庭动态，从而为社区保护行动指明具体方向和关注范围。',
+  'protect.knowledge.title': '关于长臂猿',
+  'protect.knowledge.subtitle.1': '长臂猿是什么动物？',
+  'protect.knowledge.content.1.1':
+    '长臂猿不是猴子，它们和猩猩家族的四种类一起组成类人猿，是和人类亲缘关系最近的灵长类动物；',
+  'protect.knowledge.content.1.2':
+    '长臂猿的体型较其它类人猿要小得多，所以它们也被称作"小猿"。',
+  'protect.knowledge.subtitle.2': '世界上有多少种长臂猿？',
+  'protect.knowledge.content.2.1':
+    '自然科学界目前已命名了20种长臂猿，中国有7种。长臂猿是类人猿中种类和数量最多的族群。',
+  'protect.knowledge.content.2.2':
+    '现存的长臂猿家族又分4属，它们之间有着明显的差别。',
+  'protect.knowledge.subtitle.3': '长臂猿吃什么？',
+  'protect.knowledge.content.3.1':
+    '长臂猿的主要食物是成熟的果实，也吃一些嫩芽、树叶、花和昆虫。值得注意的是，科学家曾经拍摄到中国的西黑冠长臂猿吃鼯鼠的画面。',
+  'protect.knowledge.subtitle.4': '长臂猿的家庭结构是什么样的？',
+  'protect.knowledge.content.4.1':
+    '一群长臂猿通常就是一个家庭，有父母和它们的孩子组成；',
+  'protect.knowledge.content.4.2':
+    '一个长臂猿家庭通常有2-8位成员，一般活动范围在20-100公顷，偶尔也会超过100公顷。每一家长臂猿都会保卫自己的领地不让其它长臂猿群侵入。',
+  'protect.knowledge.subtitle.5': '长臂猿生活在哪里？',
+  'protect.knowledge.content.5.1':
+    '长臂猿主要分布在南亚和东南亚的大陆及岛屿上的热带或亚热带森林中。',
+  'protect.knowledge.content.5.2': '长臂猿一生都生活在树上，几乎从不下地活动。',
+  'protect.knowledge.subtitle.6': '长臂猿的智力有多高？',
+  'protect.knowledge.content.6.1':
+    '长臂猿的智力能力还没有被科学家们深入地研究过，但是它们可以从镜子中认出自己并表现出典型的害羞表情，这种行为只有人类和其它猿类拥有；',
+  'protect.knowledge.content.6.2':
+    '长臂猿还具有非常强的记忆和规划能力，它们的脑袋里仿佛有一张食物地图，能精确地在不同果实成熟时到达目标树上取食。',
+  'protect.knowledge.subtitle.7': '长臂猿怎么移动？',
+  'protect.knowledge.content.7.1':
+    '长臂猿大多数情况下都用它们的双臂在树冠上"臂行"；',
+  'protect.knowledge.content.7.2':
+    '在猿类中，长臂猿的双臂最为发达，当它们在树冠中快速移动时，几乎是在飞行；',
+  'protect.knowledge.content.7.3': '长臂猿也可以在树枝或地面上用双足直立行走。',
+  'protect.knowledge.subtitle.8': '长臂猿为什么会唱歌？',
+  'protect.knowledge.content.8.1':
+    '几乎每天清晨，长臂猿都会发出非常嘹亮动听的鸣叫，这些歌声在1-2公里之外都能听得到；',
+  'protect.knowledge.content.8.2':
+    '歌唱在哺乳动物中是很少见的，而长臂猿的歌声又是陆生哺乳动物中最复杂最动听的；',
+  'protect.knowledge.content.8.3':
+    '一场歌唱通常会持续10-30分钟；长臂猿的歌声中包含了"歌手"的种类、性别和地位等信息；',
+  'protect.knowledge.content.8.4':
+    '长臂猿鸣唱是为了向同类宣告领域范围和寻找配偶；已经组成家庭的长臂猿夫妻常常一起进行精彩的二重唱，这可以加深彼此的感情，稳固家庭关系；',
+  'protect.knowledge.content.8.5':
+    '长臂猿的鸣唱可能和人类的歌唱有着相同的遗传起源。',
+  'protect.knowledge.threat.title': '什么是威胁长臂猿的生存和繁衍',
+  'protect.knowledge.threat.content.1':
+    '人类对森林的侵占使长臂猿的栖息地大面积消失，它们因此失去了赖以生存的家园；',
+  'protect.knowledge.threat.content.2': '人类的偷猎；',
+  'protect.knowledge.threat.content.3':
+    '适合长臂猿生活的森林破碎成孤岛状，迁出的长臂猿很难找到合适的家庭群，限制了种群的扩大；',
+  'protect.knowledge.threat.content.4':
+    '群体间距离远，致使基因交流受到阻隔，造成后代生存力减弱，繁殖能力降低；',
+  'protect.knowledge.threat.content.5':
+    '成年期较长（7-8年），繁殖间隔长，繁殖率低；',
+  'protect.knowledge.threat.content.6': '长期被忽视，研究和保护力度低。',
+  'protect.knowledge.why.title': '为什么要保护长臂猿',
+  'protect.knowledge.why.content.1':
+    '长臂猿是森林里的旗舰物种，是一个健康森林的标志，它们极度依赖于原始森林所提供的丰富食物，加之鸣叫声容易被监测到，长臂猿可作为森林状况恶化的预警——长臂猿的消失即意味着森林不再健康；',
+  'protect.knowledge.why.content.2':
+    '长臂猿生存的森林生态系统是我国生物多样性最为丰富的地区，保护长臂猿就像撑开了一把保护伞，间接保护了生活在同一区域的其它生物；',
+  'protect.knowledge.why.content.3':
+    '长臂猿是人类的近亲，对长臂猿生态、行为、社会结构、意识等方面的研究是通向人类自身的钥匙；',
+  'protect.knowledge.why.content.4':
+    '长臂猿是中国和人类亲缘关系最近的动物，在传统文化中具有举足轻重的地位。',
+  'protect.knowledge.cta.title': '从我做起，保护长臂猿',
+  'protect.knowledge.cta.content.1':
+    '关注"云山保护"，了解长臂猿，了解关于长臂猿的保护行动；',
+  'protect.knowledge.cta.content.2':
+    '成为志愿者，参与长臂猿保护行动，并向身边的朋友宣传长臂猿保护；',
+  'protect.knowledge.cta.content.3': '拒绝消费野生动物及野生动物制品；',
+  'protect.knowledge.cta.content.4':
+    '拒绝购买来自原始森林的红木、硬木或藤本制品，包括家具、木制工艺品等；',
+  'protect.knowledge.cta.content.5':
+    '发现有人买卖、贩运长臂猿或者其他野生动物制品，及时向林业公安部门报告。',
 
-  'programs.community.education.reason':
-    '云南无量山哀牢山国家级自然保护区是森林生态系统和野生生物类别的自然保护区，以中山湿性常绿阔叶林森林生态系统以及在其生存的珍稀濒危动物为主要保护对象。保护区物种资源丰富，其中，有国家一级保护植物4种（红豆杉、长蕊木兰等）、国家一级保护动物11种（西黑冠长臂猿、灰叶猴等），面积达147万亩，周边涉及5万多人口。为了更好地开展保护工作，培养周边群众对家乡环境的喜爱，获得人们对保护的认知与支持。自2019年以来，云山保护与无量山哀牢山国家级自然保护区景东管护局等单位长期合作，围绕长臂猿栖息地周边小学开展了一系列关于西黑冠长臂猿的相关科普宣教活动。',
-  'programs.community.education.description.1':
-    '2019年3-7月，"长臂猿小使者"科普宣传系列活动在周边小学开展"认识家乡的长臂猿"、"保护中国猿，科普进校园"科普课堂宣讲、主题游园会、长臂猿巨画制作等，游园会与科普课堂相结合的宣传方式，把保护区宣教工作向前推进了一步，保护区将继续用知识和欢乐把西黑冠长臂猿带回给生活在两山的孩子心中。',
-  'programs.community.education.description.2':
-    '2021年7-9月，两山自然教育体验活动用自然教育的手法，在无量山哀牢山周边乡村小学，基于校园及周边环境，研发并开展科普课堂和校园自然周活动，促进学生对家乡自然环境的认知、理解和欣赏，让社区的年轻一代逐步了解自然和人的关系，成为实实在在的家乡生态环境守护者。',
+  'programs.overview.title': '项目概览',
+  'programs.overview.content.1':
+    '中国有七种长臂猿，总数不超过1800只，仅存于云南、西藏、广西、海南的小范围保存完好的森林里，绝大部分长臂猿种群已经在国家公园和保护区范围内受到较为严格的保护，但也还有一部分长臂猿是生活在保护区之外跟当地社区紧密相连的栖息地之中。',
+  'programs.overview.content.2':
+    '为了守护濒危的长臂猿及其赖以生存的生态系统，云山保护围绕“野外调查与保护监测、社区保护、科普与公众参与”三大方向，构建出一条立体、多元的自然保护路径。',
+  'programs.overview.content.3':
+    '我们以科学为基石，长期开展野外调查与监测，了解长臂猿的种群动态和生活状态，为后续保护及政府决策提供数据支持。在这片土地上，保护不能脱离人，社区居民的参与至关重要。我们通过推行生态事物公共基金、社区保护领导力建设、英文小组和自然教育等方式，让社区成为守护长臂猿的核心力量。',
+  'programs.overview.content.4':
+    '同时，我们致力于让更多人看见保护的价值。通过持续的公众传播、志愿活动、实习项目和公益众筹，我们为公众搭建参与自然保护的多样路径，让每一个人都能以自己的方式，为这片山林发声。',
+  'programs.overview.content.5':
+    '在这条路上，科学与情感并行，专业与信任相伴。云山保护始终相信——人与自然的和谐共生，是值得努力的方向。',
+  'programs.overview.investigation': '野外调查和保护监测',
+  'programs.overview.community': '社区保护地',
+  'programs.overview.public': '科普与公众参与',
+  'programs.overview.learn': '了解更多',
 
-  'news.background': '背景',
-  'news.event': '历年活动',
-  'news.learn': '了解更多',
+  'programs.intro': '项目简介',
+  'programs.time': '项目时间',
+  'programs.activities': '项目活动',
+  'programs.outcome': '项目成果',
 
-  'news.gibbonday.background':
-    '每年的10月24号是由IUCN灵长类专家组(SSA)为长臂猿保护和宣传设立的"International Gibbon Day（国际长臂猿日）"。在这一天世界各地的长臂猿保护组织和动物园都会开展各种活动唤起公众对长臂猿生存和保护状态的关注。 旨在引起社会公众对小猿（长臂猿）的关注，号召野生动物保护机构、研究学界、政府、企业、社会公众等社会力量联合起来，为保护长臂猿采取积极行动。\n',
-  'news.gibbonday.description.1':
-    '2017年，云山保护在国际长臂猿日开始与动物园合作，在园区内开展以"保护中国猿"为主题的科普宣教活动。这一年云山保护分别与北京动物园和昆明动物园合作开展了三场线下活动；\n',
-  'news.gibbonday.description.2':
-    '2018年除了在广州动物园、杭州植物园开展线下游园会科普活动，还联动了北京动物园、南京红山动物园、昆明动物园以及天津动物园同时开展科普宣传活动。\n',
-  'news.gibbonday.description.3':
-    '2019年以 "长臂猿不是宠物，它们归属山野"为主题，在南京红山动物园的牵头下，联动10家不同省份的动物园开展活动，并策划了一段带动物园科普讲解员和饲养员奔向野外的旅程。\n',
-  'news.gibbonday.description.4':
-    '受疫情影响，2020年，我们通过线上的方式开展活动——直播放映首部天行长臂猿纪录片《天行情歌》、联合一线保护工作者分享他们在长臂猿栖息的边境村庄带来保护的故事与思考。\n',
-  'news.gibbonday.description.5':
-    '2021年，云山保护联动月捐人，进行了一线工作者的直播分享和长臂猿摄影展览。\n',
+  'programs.investigation': '野外调查和保护监测',
+  'programs.investigation.intro.1': '了解是保护的前提和基石。\n',
+  'programs.investigation.intro.2':
+    '10年来，我们在野外和社区展开了一系列针对长臂猿的调查行动，通过执行规范化巡护、种群及栖息地调查、鸣声监测、红外相机影像监测、社区访谈等手段，持续追踪长臂猿的生存状况，评估栖息地的健康水平，识别潜在威胁，了解长臂猿栖息地周边社区的老乡对于长臂猿及其它灵长类的认知程度，为后续的保护行动提供科学依据。\n',
+  'programs.investigation.intro.3':
+    '而获得的这些信息，能够帮助政府更好地做好保护工作，也能向公众讲述它们的故事，每一组数据、每一次发现，都在帮助大家更加了解它们的生活状况。\n',
 
-  'news.illegal.background.1':
-    '长期以来，相较于象牙、犀角等非法野生动物制品贸易，灵长类动物的非法贸易受关注较少。但其跨境、活体交易多、物种辨识难度高的特点，又为执法部门有效打击灵长类动物非法贸易增添了难度。为了有效保护灵长类动物的野生种群，我们必须与政府执法部门、公众联合起来，构建有效的跨境灵长类非法贸易信息共享网络。\n',
-  'news.illegal.background.2':
-    '2018年12月云山保护初步开始尝试通过志愿者进行灵长类非法贸易线上调查，2019年7月云山保护申请到中国绿色碳汇基金会的打击濒危野生动植物非法贸易小额基金，用于支持灵长类非法贸易调查与信息共享平台构建。\n',
-  'news.illegal.event.1':
-    '在这个为期一年半的小额项目中，云山保护招募并培训了24位志愿者，通过不断的培训与实践，形成稳定的调查小组：\n',
-  'news.illegal.event.2':
-    '针对非法贸易信息实时监测、新闻数据收集以及法律文书信息整合3个大方向进行分工。\n',
-  'news.illegal.event.3':
-    '实时监测小组收集共计151条灵长类非法贸易信息，共向森林公安提交5个完整的野生动物非法贸易调查宗卷；通过与森林公安的配合，其中3个案件得到了侦破；新闻小组整理共计285条灵长类救护与非法贸易信息；法律文书小组整理2014-2019年间涉及灵长类非法贸易案件745件\n',
-  'news.illegal.event.4':
-    '基于上述整理，2021年4月云山保护志愿者调查小组完成中国灵长类辨识与救护手册的制作，通过云山保护、果壳、中国绿色碳汇基金会等平台面向公众及有关执法部门输出，影响将近30万公众。\n',
+  'programs.investigation.title.1':
+    '一、永德大雪山国家级自然保护区西黑冠长臂猿规范化巡护监测',
+  'programs.investigation.time.1': '2016年8月-2017年7月',
+  'programs.investigation.activities.1.1':
+    '1. 给永德大雪山保护区的工作人员提供了3次监测技能和方法的培训；',
+  'programs.investigation.activities.1.2':
+    '2. 带领长臂猿研究专家考察西黑冠长臂猿滇西亚种的栖息地；',
+  'programs.investigation.activities.1.3':
+    '3. 在野外实地指导长臂猿行为监测的具体方法，培训一线监测队员。',
+  'programs.investigation.outcome.1.1':
+    '共60多人次接受了专业的长臂猿调查和监测方法培训；',
+  'programs.investigation.outcome.1.2':
+    '和永德大雪山保护区、昆明动物博物馆共同举办公众科普宣传，影响3000多人次；',
+  'programs.investigation.outcome.1.3':
+    '提升了保护区红外数据收集和整理的规范性和效率，对监测表格进行了优化；',
+  'programs.investigation.outcome.1.4':
+    '印制了2000份西黑冠长臂猿小折页，在公众宣传活动中发放起到广泛的科普效果。',
 
-  'news.participation.background':
-    '野生动物保护工作不仅需要政府、当地社区、科研团队、保护团队的合作与努力，还需要公众的力量。保护长臂猿有一万种姿态，有人从政策层面推动保护工作，有人勤奋研究获取物种保护的钥匙，有人在地执行，有人慷慨捐赠，有人奔走相告……云山意识到，公众参与环节缺一不可，而该部分因参与深度不同呈现出了更全面、更健康的保护逻辑链条。中国猿的保护工作中，公众筹款并不仅限于资金支持，同时也是濒危物种和保护故事的品牌传播。看见保护故事→激发捐赠行为→从单次捐款到长臂猿保护支持者身份认同的转变，是我们认可并期待的保护环节。\n',
-  'news.participation.event.1':
-    '从2015开始，云山开始参与9.9腾讯公益日、支付宝公益等众筹活动，并在2020年12月底开通了月捐"和云山一起保护中国猿"项目，在公益项目传播热点积极传递我们的保护故事和价值观、筹集保护经费。\n',
-  'news.participation.event.2':
-    '筹款只是其中一个切口，在工作中，我们也积极招募，目前已有设计、绘画、传播、视频、翻译、英语教育、野外调查、自然导师、数据分析、法务、法律文书整理、活动执行、驾驶等方面的研修生、实习生、志愿者在保护工作中贡献了自己的专业技能。\n',
-  'news.participation.event.3':
-    '截至2022年5月，云山的志愿者超过340人，实习生累计达到40人，月捐人累计达到724人，众筹捐赠者累计达到34255人次\n',
+  'programs.investigation.title.2': '二、长臂猿种群调查和动态监测',
+  'programs.investigation.time.2': '2017年4月-至今',
+  'programs.investigation.activities.2.1':
+    '1. 2017年天行长臂猿国内现有栖息地范围内的种群大调查，联合中山大学、西南林业大学、高黎贡山国家级自然保护区、铜壁关省级自然保护区、腾冲市林草局和德宏州林草局共同完成；',
+  'programs.investigation.activities.2.2':
+    '2. 栖息地内植物样方调查，对比保护区内和社区周边的栖息地长臂猿食物树组成和丰富度；',
+  'programs.investigation.activities.2.3':
+    '3. 苏典和支那两个乡分布的天行长臂猿种群开展长期种群动态监测，了解种群动态变化；',
+  'programs.investigation.activities.2.4':
+    '4. 给苏典梨树村的长臂猿栖息地中主要食物树进行挂牌。',
+  'programs.investigation.outcome.2.1':
+    '1. 获得了天行长臂猿重新描述命名后的国内种群数量本底信息；',
+  'programs.investigation.outcome.2.2':
+    '2. 了解了重点区域天行长臂猿的种群动态变化，为保护行动提供了数据支持；',
+  'programs.investigation.outcome.2.3':
+    '3. 分析了盈江县保护区外的长臂猿栖息地质量和高黎贡山保护区内的栖息地质量差异；',
+  'programs.investigation.outcome.2.4':
+    '4. 获得了盈江长臂猿栖息地内主要食物树和藤本种类。',
 
-  'news.follow': '关注我们',
-  'news.output': '过往产出',
-  'news.content.reason':
-    '对于公众来说，长臂猿及其保护工作还有很大的科普空间。云山保护已入驻包括但不限于微信公众号、微博、B站、快手、抖音、小红书等的社交媒体平台，通过优质图文影音、直播、讲座等方式，持续产出长臂猿及相关物种的科普内容、鼓励保护工作者以多样的角度出发分享保护工作故事，提高公众对长臂猿的关注和长臂猿保护工作重要性的认知，也让更多人了解并加入长臂猿保护的队伍中来。\n',
-  'news.content.output.1': '云山不断破圈，尝试不同领域、不同形式的内容产出：\n',
-  'news.content.output.2':
-    '《人民日报》、《中国国家地理》、《少年科学画报》、果壳等媒体平台对天行长臂猿及其保护工作进行了多元报道；\n',
-  'news.content.output.3':
-    '@Alex绝对是个妞儿、@滇西小哥等大V博主探访项目地，为我们带来了更广泛的关注；\n',
-  'news.content.output.4':
-    '我们也把保护故事带到了播客节目"故事FM"、"声东击西"中，《寻找猿粪：我可能是世界上最艰难的铲屎官》《猿粪有什么好珍惜的？》分享了别样的跟猿工作日常；\n',
-  'news.content.output.5':
-    '"长臂猿和它的邻居们"、"云山同事热爱工作"、"云山同事关系良好"系列原创视频，从长臂猿及相关动植物科普、保护工作记录等方面展示更加立体的保护工作。\n',
-  'news.content.output.6':
-    '同时，持续推出的天天玩偶、长臂猿生境拼图、知识手册、解密游戏盒、长臂猿服饰等原创和联名文创周边，策划的月捐一周年"样样好"活动、"虎年春节指南"等活动，都让我们与大众的关系更加紧密\n',
-  'news.content.output.7':
-    '截至2023年7月，云山保护微信公众号关注者达1.9万，微博粉丝数达7.9万，B站粉丝数达5000+\n',
+  'programs.investigation.title.3': '三、长臂猿种群及栖息地空缺调查',
+  'programs.investigation.time.3': '2018-2021年',
+  'programs.investigation.activities.3.1':
+    '1. 北白颊长臂猿潜在分布区的访问调查和录音调查；',
+  'programs.investigation.activities.3.2':
+    '2. 白掌长臂猿潜在分布区的访问调查和录音调查；',
+  'programs.investigation.activities.3.3':
+    '3. 天行长臂猿潜在分布区的访问调查和录音调查；',
+  'programs.investigation.outcome.3.1':
+    '1. 设置了70多个监听点位，获得8200多小时的录音数据；',
+  'programs.investigation.outcome.3.2':
+    '2. 在访谈过程中了解到在易武保护区和勐腊县有近十年内的长臂猿目击或者鸣叫记录，但短期的监听调查没有获得直接证据；',
+  'programs.investigation.outcome.3.3':
+    '3. 在已知的天行长臂猿分布区之外发现了两个新的分布区，都在盈江县境内，其中一个是天行长臂猿在我国最南的分布；',
+  'programs.investigation.outcome.3.4':
+    '4. 识别出一些保存完好的原始森林，这些区域并不在任何保护区内，需要后续持续关注。',
+
+  'programs.investigation.title.4': '四、天行长臂猿遗传多样性研究',
+  'programs.investigation.time.4': '2018-2021年',
+  'programs.investigation.activities.4.1':
+    '1. 训练搜粪犬开展野外种群粪便收集；',
+  'programs.investigation.activities.4.2':
+    '2. 配合中山大学范朋飞教授团队开展野外非习惯化种群的粪便收集；',
+  'programs.investigation.outcome.4.1':
+    '1. 在盈江县有长臂猿分布的7个村寨周边森林进行了猿粪收集；',
+  'programs.investigation.outcome.4.2': '2. 成功采集到3个不同种群的粪便；',
+  'programs.investigation.outcome.4.3':
+    '3. 通过中山大学范教授团队的实验室研究工作，对苏典、支那、猴桥、腾冲等分布片区的长臂猿不同家庭群的遗传多样性有了新的认识。',
+
+  'programs.investigation.title.5': '五、长臂猿食堂调查计划',
+  'programs.investigation.time.5': '2022-至今',
+  'programs.investigation.activities.5.1':
+    '1. 在苏典乡的拉马河-梨树片区的长臂猿食物树上布设红外相机，调查长臂猿的取食行为和潜在食物竞争者；',
+  'programs.investigation.activities.5.2':
+    '2. 通过红外监测获得的位点数据，评估区域内每群长臂猿的活动范围和核心食物斑块；',
+  'programs.investigation.activities.5.3':
+    '3. 通过红外监测了解区域内长臂猿家庭群的种群动态变化。',
+  'programs.investigation.outcome.5.1':
+    '1. 两年多的项目执行期内，共布设红外相机422台次（持续增加中），获得共计29万个，12T的红外影像数据；',
+  'programs.investigation.outcome.5.2':
+    '2. 经过红外志愿者的分析，一共拍摄到3个长臂猿家庭的取食行为，还拍摄到50多种鸟类和20多种兽类；',
+  'programs.investigation.outcome.5.3':
+    '3. 拍摄到两个长臂猿家庭群内新出生的小猿，并且在我们之前认为长臂猿不会去的高海拔区域拍摄到长臂猿活动影像，拓展了我们对长臂猿适应高海拔栖息地的认知；',
+  'programs.investigation.outcome.5.4':
+    '4. 180位红外影像监测志愿者线上参与了本项目的红外影像分拣、识别和复核工作，根据项目实践产出了一份红外志愿者自我管理手册；',
+  'programs.investigation.outcome.5.5':
+    '5. 根据食堂调查的分析结果编制了《长臂猿食堂科普手册》。',
+
+  'programs.investigation.title.6': '六、灵长类社区保护意识和态度调查',
+  'programs.investigation.time.6': '2024年4-6月',
+  'programs.investigation.activities.6.1':
+    '1. 通过访问调查了解苏典乡灵长类动物的历史和现存分布情况，分析变化和探讨背后的原因；',
+  'programs.investigation.activities.6.2':
+    '2. 收集傈僳族村民对灵长类的传统文化和传说故事，探讨传统文化对灵长类保护的贡献。',
+  'programs.investigation.outcome.6.1':
+    '1. 访问调查了苏典乡4个行政村的49个村民小组，共816位村民接受了访谈；',
+  'programs.investigation.outcome.6.2':
+    '2. 了解到除了天行长臂猿之外，蜂猴是村民遇见率最高的灵长类；',
+  'programs.investigation.outcome.6.3':
+    '3. 共收集到关于灵长类和其他野生动物相关的民间传说和保护故事21条。',
+
+  //community page
+  'programs.community': '社区保护地',
+  'programs.community.intro.1':
+    '我们关心长臂猿，也关心与长臂猿保护息息相关的人。',
+  'programs.community.intro.2':
+    '在长臂猿生活的山林周边，居住着与它们共享森林的人们，而真正有效的保护，离不开当地社区的理解、参与与支持。',
+  'programs.community.intro.3':
+    '云山保护长期扎根社区，通过长期调查、宣传教育、能力建设等方式，带着长臂猿的邻居、当地社区的老乡们一起参与保护行动。我们期待着在这片土地上，“保护”能成为老乡们的自觉行动，我们希望他们有能力保护好家乡的长臂猿。',
+  'programs.community.intro.4':
+    '社区保护不是短暂的活动，而是一段持续的关系建立，是人与自然彼此看见、彼此守护的过程。',
+
+  'programs.community.title.1': ' 一、天行长臂猿分布区周边社区调查',
+  'programs.community.time.1': '2019年9月-2020年4月，2021年8月-2022年4月',
+  'programs.community.activities.1.1':
+    '1. 盈江县天行长臂猿栖息地周边社区的社会学本底调查；',
+  'programs.community.activities.1.2':
+    '2. PRA调查了解拉马河-梨树社区的自然资源利用情况；',
+  'programs.community.activities.1.3': '3. 完成社区调查报告和PRA调查报告',
+  'programs.community.outcome.1.1':
+    '1. 完成了保护区外天行长臂猿栖息地周边17个社区共271户村民的访问调查；',
+  'programs.community.outcome.1.2':
+    '2. 识别出拉马河-梨树片区是长臂猿栖息地和社区生产生活用地重叠度最高的区域，适合开展社区为主体的保护行动；',
+  'programs.community.outcome.1.3':
+    '3. 选定了梨树社区为社区保护行动的试点村，与梨树社区共同制定了长臂猿保护和社区可持续发展行动规划；',
+  'programs.community.outcome.1.4':
+    '4. 确定了梨树妇女组为社区保护行动的主体，通过妇女组能联动到全体村民参与。',
+
+  'programs.community.title.2': '二、西黑冠长臂猿栖息地周边学校科普教育活动',
+  'programs.community.time.2': '2019年3月-2021年9月',
+  'programs.community.activities.2.1': '1. “长臂猿小使者”系列科普宣传活动；',
+  'programs.community.activities.2.2': '2. 长臂猿主题校园游园会；',
+  'programs.community.activities.2.3': '3. 两山自然教育体验活动。',
+  'programs.community.outcome.2.1':
+    '1. 在景东县保护区周边3所小学开展了长臂猿主题游园会，共计覆盖2000多学生和老师；',
+  'programs.community.outcome.2.2':
+    '2. 在3所学校开展科普课堂分享，让更多本地学生认识到西黑冠长臂猿；',
+  'programs.community.outcome.2.3':
+    '3. 带领景东县的小学生代表到广州动物园参加国际长臂猿日宣传活动，给城市公众讲述自己家乡的长臂猿保护故事。',
+
+  'programs.community.title.3': '三、盈江县周边社区长臂猿主题乡土自然教育',
+  'programs.community.time.3': '2020年7月-2021年11月',
+  'programs.community.activities.3.1':
+    '1. 认识家乡的长臂猿主题系列课程研发和实践教学；',
+  'programs.community.activities.3.2':
+    '2. 社区青少年自然教育体验活动在苏典乡的梨树和拉马河社区开展；',
+  'programs.community.outcome.3.1':
+    '1. 研发并迭代了10节乡土自然教育课程，并克服疫情影响在一所小学实践了一个学期；',
+  'programs.community.outcome.3.2':
+    '2. 编制了《守护森林之歌》长臂猿主题自然科普学生用书和教师手册；',
+  'programs.community.outcome.3.3':
+    '3. 参加学校乡土自然教育课程和社区青少年自然教育体验的学生达685人次。',
+
+  'programs.community.title.4':
+    '四、基于天行长臂猿保护的傈僳族女性赋能和社区发展',
+  'programs.community.time.4': '2021年-至今',
+  'programs.community.activities.4.1':
+    '1. “生态公共事务基金“模式的探索和推广；',
+  'programs.community.activities.4.2': '2. 儿童英文兴趣夏令营和线上兴趣小组；',
+  'programs.community.activities.4.3': '3. 妇女组和社区代表外出参访学习。',
+  'programs.community.outcome.4.1':
+    '1. 20余名线上线下志愿者为梨树和拉马河社区的孩子提供了超过1000小时的线上英文课程，并连续3年开展暑期英语夏令营活动；',
+  'programs.community.outcome.4.2':
+    '2. 2021-2024年，梨树社区累计获得超过10万元生态公共事物基金，由妇女组管理和运营；',
+  'programs.community.outcome.4.3':
+    '3. 2023-2024年，拉马河社区获得超过3万元生态公共事物基金，由妇女组管理河运营；',
+  'programs.community.outcome.4.4':
+    '4. 两个社区的妇女代表外出参访学习3次，涉及三个议题，参访后社区内部进行了分享并开展持续的思考。',
+
+  'programs.community.title.5': '五、天行长臂猿高海拔栖息地恢复与质量提升',
+  'programs.community.time.5': '2022年3月-至今',
+  'programs.community.activities.5.1':
+    '1. 对连接梨树和拉马河两边长臂猿栖息地之间的光坡（历史上曾经是森林被砍伐烧荒后变为草坡）开展生态种植；',
+  'programs.community.activities.5.2':
+    '2. 对现有长臂猿栖息地边缘质量不佳的森林区域开展藤本补植；',
+  'programs.community.activities.5.3':
+    '3. 在梨树社区建设原生植物苗圃，对长臂猿喜食的乔木和藤本进行育苗；',
+  'programs.community.activities.5.4':
+    '4. 对生态种植的乔木和藤本开展持续生长情况监测，在必要的季节开展除草、施肥、围草防霜等管护行动。',
+  'programs.community.outcome.5.1':
+    '1. 在梨树和拉马河的光坡区域种植了4000多棵乔木，包括野樱桃、杜英、桤木、华山松等；',
+  'programs.community.outcome.5.2':
+    '2. 在疏林区域种植了5000多株藤本植物，包括三叶木通、乌蔹梅等；',
+  'programs.community.outcome.5.3':
+    '3. 2022-2024年通过光坡种植和疏林补植，共提升了2平方公里的长臂猿栖息地质量；',
+  'programs.community.outcome.5.4':
+    '4. 培训老乡实践了苗圃育苗、生态种植、苗木生长监测和管护等各环节流程，编制了《天行长臂猿高海拔栖息地恢复技术手册》。',
+
+  //public page
+  'programs.public': '科普传播及公众参与',
+  'programs.public.intro.1':
+    '对于城市的公众来说，长臂猿或许离我们很远，但它们的命运与每一个人息息相关。',
+  'programs.public.intro.2':
+    '唯有被看见、被理解，长臂猿与它们的栖息地才有更大的希望被守护，而公众传播与科普，是连接山林与人群的桥梁。我们通过视频、图文、线下活动等多元形式，将深藏在山林中的长臂猿故事讲给更多人听，也邀请公众用自己的方式加入这场跨越物种的守护行动。',
+  'programs.public.intro.3':
+    '从一篇文章到一场线下分享，从一次捐赠到一场志愿活动，我们努力让让保护变得可参与。',
+  'programs.public.intro.4':
+    '我们相信，“保护”可以是一种人人都能理解的语言，也可以是一种日常可见的行动。',
+
+  'programs.public.title.1': '一、公众参与',
+  'programs.public.time.1': '2015年至今',
+  'programs.public.activities.1.1':
+    '1. 开展线上、线下志愿活动，例如灵长类非法信息贸易小组、红外志愿小组、妇女儿童成长小组等，让普通公众也能获得参与保护的机会；',
+  'programs.public.activities.1.2':
+    '2. 部分岗位开放实习机会，通过实习深度参与项目，踏出保护之旅的坚实一步；',
+  'programs.public.activities.1.3':
+    '3. 通过单次捐赠、月捐众筹等筹款方式，让无法亲身参与保护的公众，也能为保护工作贡献力量。',
+  'programs.public.outcome.1.1':
+    '1. 累计获得360余名志愿者、50余位实习生、1000余位月捐人及上万名单次捐赠者的支持；',
+  'programs.public.outcome.1.2':
+    '2. 灵长类非法信息贸易小组向森林公安提交了5个完整的野生动物非法贸易卷宗，并与其配合，其中3个案件得到侦破；制作《中国灵长类辨识与救护手册》，影响近30w公众；',
+  'programs.public.outcome.1.3':
+    '3. 红外志愿小组分拣识别了12TB以上的红外数据，让我们看到 3 个长臂猿家庭群、以及 50 余种鸟类和包括蜂猴、猕猴在内的 20 余种其他兽类多次取食的画面；',
+  'programs.public.outcome.1.4':
+    '4. 妇女儿童成长小组每周为社区妇女儿童提供志愿服务，包括英语课、心理辅导、职业分享等内容。',
+
+  'programs.public.title.2': '二、科普宣传',
+  'programs.public.time.2': '2015至今',
+  'programs.public.activities.2.1':
+    '1. 通过10.24 国际长臂猿日、腾讯99公益日等重要节点、在线上、线下展开长臂猿相关的科普宣传活动；',
+  'programs.public.activities.2.2':
+    '2. 入驻包括但不限于微信公众号、微博、B 站、快手、抖音、小红书等的社交媒体平台，通过优质图文影音、直播、讲座等方式，持续产出长臂猿及相关物种的科普内容；',
+  'programs.public.activities.2.3':
+    '3. 与圈外媒体、kol联动破圈，尝试不同领域，不同形式的内容产出。',
+  'programs.public.outcome.2.1':
+    '1. 被CCTV1、《人民日报》、《光明日报》、《中国国家地理》、果壳、一条等媒体平台报道；',
+  'programs.public.outcome.2.2':
+    '2. 获得全网粉丝数12w+，原创话题 # 和云山一起守护中国猿 # 阅读次数 3 亿、讨论次数 175.5 万',
+  'programs.public.outcome.2.3':
+    '3. 与缤纷自然、中山大学范朋飞研究团队共同出品的中国第一部长臂猿自然纪录片《天行情歌》在国内外上线，累计播放次数超XXX次',
 
   'protect.archive.listen': '听声音',
   'protect.archive.name': '学名',

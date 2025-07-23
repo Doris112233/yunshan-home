@@ -1,15 +1,15 @@
-import ht1 from './assets/archive/Hoolock_tianxing_1.jpg';
-import ht2 from './assets/archive/Hoolock_tianxing_2.jpg';
-import hl1 from './assets/archive/Hylobates_lar_1.jpg';
-import hl2 from './assets/archive/Hylobates_lar_2.jpg';
-import nc1 from './assets/archive/Nomascus_concolor_1.jpg';
-import nc2 from './assets/archive/Nomascus_concolor_2.jpg';
-import nh1 from './assets/archive/Nomascus_hainanus_1.jpg';
-import nh2 from './assets/archive/Nomascus_hainanus_2.jpg';
-import nl1 from './assets/archive/Nomascus_leucogenys_1.jpg';
-import nl2 from './assets/archive/Nomascus_leucogenys_2.jpg';
-import nn1 from './assets/archive/Nomascus_nasutus_1.jpg';
-import nn2 from './assets/archive/Nomascus_nasutus_2.jpg';
+import ht1 from '../../public/images/archive/Hoolock_tianxing_1.jpg';
+import ht2 from '../../public/images/archive/Hoolock_tianxing_2.jpg';
+import hl1 from '../../public/images/archive/Hylobates_lar_1.jpg';
+import hl2 from '../../public/images/archive/Hylobates_lar_2.jpg';
+import nc1 from '../../public/images/archive/Nomascus_concolor_1.jpg';
+import nc2 from '../../public/images/archive/Nomascus_concolor_2.jpg';
+import nh1 from '../../public/images/archive/Nomascus_hainanus_1.jpg';
+import nh2 from '../../public/images/archive/Nomascus_hainanus_2.jpg';
+import nl1 from '../../public/images/archive/Nomascus_leucogenys_1.jpg';
+import nl2 from '../../public/images/archive/Nomascus_leucogenys_2.jpg';
+import nn1 from '../../public/images/archive/Nomascus_nasutus_1.jpg';
+import nn2 from '../../public/images/archive/Nomascus_nasutus_2.jpg';
 
 const dataArchaeo = [
   {

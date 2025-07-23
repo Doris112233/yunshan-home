@@ -1,4 +1,4 @@
-import partner from './assets/partner/partner.png';
+import partner from '../../public/images/partner/partner.png';
 
 const data = [
   {

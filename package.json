@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider umi dev",
-    "build": "umi build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
@@ -33,11 +33,13 @@
     "prettier": "^1.19.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-responsive": "^10.0.1",
     "sass": "^1.89.0",
     "swiper": "^9.2.0",
     "yorkie": "^2.0.0"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.13",
     "@types/react-slick": "^0.23.4",
     "file-loader": "^6.2.0",
     "sass-loader": "^16.0.0",

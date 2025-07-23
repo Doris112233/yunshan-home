@@ -1,5 +1,5 @@
-import month1 from './assets/donate/month.jpg';
-import month2 from './assets/donate/month2.png';
+import month1 from '../../public/images/donate/month.jpg';
+import month2 from '../../public/images/donate/month2.png';
 
 const data = [
   {

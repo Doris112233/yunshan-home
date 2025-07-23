@@ -1,8 +1,8 @@
-import k1 from './assets/knowledge/k1.png';
-import k2 from './assets/knowledge/k2.png';
-import k3 from './assets/knowledge/k3.png';
-import k4 from './assets/knowledge/k4.jpg';
-import k5 from './assets/knowledge/k5.jpg';
+import k1 from '../../public/images/knowledge/k1.png';
+import k2 from '../../public/images/knowledge/k2.png';
+import k3 from '../../public/images/knowledge/k3.png';
+import k4 from '../../public/images/knowledge/k4.jpg';
+import k5 from '../../public/images/knowledge/k5.jpg';
 
 const data = {
   k1: k1,

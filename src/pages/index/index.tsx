@@ -14,7 +14,7 @@ import indexLog from '../../data/assets/index/indexLogo.png';
 import './index.less';
 import data from '../../data/index';
 import mediadata from '../../data/contact';
-import { Link } from 'umi';
+import { Link, history } from 'umi';
 import { getLocale } from '@@/plugin-locale/localeExports';
 import Container from '@material-ui/core/Container';
 import { CaretRightOutlined, RightCircleOutlined } from '@ant-design/icons';
@@ -22,20 +22,34 @@ import { CaretRightOutlined, RightCircleOutlined } from '@ant-design/icons';
 const ellipse1 = data.ellipse1;
 const ellipse2 = data.ellipse2;
 const ellipse3 = data.ellipse3;
-const cards = [
-  { key: 'wild', shortLabel: '野外', longLabel: '野外调查', img: ellipse1 },
-  {
-    key: 'community',
-    shortLabel: '社区',
-    longLabel: '社区保护',
-    img: ellipse2,
-  },
-  { key: 'public', shortLabel: '公众', longLabel: '公众倡导', img: ellipse3 },
-];
 
 const Index: React.FC = props => {
   const intl = useIntl();
   const [expanded, setExpanded] = useState('wild');
+
+  const cards = [
+    {
+      key: 'wild',
+      shortLabel: intl.formatMessage({ id: 'home.work.card.wild.short' }),
+      longLabel: intl.formatMessage({ id: 'home.work.card.wild.long' }),
+      img: ellipse1,
+      path: '/programs/investigation',
+    },
+    {
+      key: 'community',
+      shortLabel: intl.formatMessage({ id: 'home.work.card.community.short' }),
+      longLabel: intl.formatMessage({ id: 'home.work.card.community.long' }),
+      img: ellipse2,
+      path: '/programs/community',
+    },
+    {
+      key: 'public',
+      shortLabel: intl.formatMessage({ id: 'home.work.card.public.short' }),
+      longLabel: intl.formatMessage({ id: 'home.work.card.public.long' }),
+      img: ellipse3,
+      path: '/programs/public',
+    },
+  ];
 
   return (
     <div className="full-page">
@@ -105,10 +119,10 @@ const Index: React.FC = props => {
       <div className="section-container section-work">
         <div className="work-left">
           <div className="content-title">
-            <h2>我们的工作</h2>
+            <h2>{intl.formatMessage({ id: 'home.work.title' })}</h2>
           </div>
           <div className="content-desc">
-            在中国的西南地区，我们坚持了将近10年的野外调查监测、社区保护和科普宣教工作，为相关保护区和林草系统合作伙伴提供了长臂猿保护的科学依据及保护建议，并为公众提供了大量长臂猿科普优质活动和内容。
+            {intl.formatMessage({ id: 'home.work.content' })}
           </div>
           <div className="content-button-container">
             <Button className="content-button">
@@ -125,7 +139,13 @@ const Index: React.FC = props => {
               className={`work-card ${card.key} ${
                 expanded === card.key ? 'expanded' : 'shrunk'
               }`}
-              onClick={() => setExpanded(card.key)}
+              onClick={() => {
+                if (expanded === card.key) {
+                  history.push(card.path);
+                } else {
+                  setExpanded(card.key);
+                }
+              }}
             >
               <img src={card.img} alt={card.longLabel} />
               <div className="work-card-label">
@@ -139,7 +159,7 @@ const Index: React.FC = props => {
       </div>
       <div className="section-story">
         <div className="story-title">
-          <h2>我们的故事</h2>
+          <h2>{intl.formatMessage({ id: 'home.story.title' })}</h2>
         </div>
         <div className="story-cards">
           <div className="story-card">
@@ -147,7 +167,8 @@ const Index: React.FC = props => {
               <img src={data.story1} alt="story1" />
             </div>
             <p>
-              长臂猿食堂调查计划 <span className="arrow">{'>'}</span>
+              {intl.formatMessage({ id: 'home.story.card1' })}{' '}
+              <span className="arrow">{'>'}</span>
             </p>
           </div>
           <div className="story-card">
@@ -155,7 +176,8 @@ const Index: React.FC = props => {
               <img src={data.story2} alt="story2" />
             </div>
             <p>
-              社区保护 <span className="arrow">{'>'}</span>
+              {intl.formatMessage({ id: 'home.story.card2' })}{' '}
+              <span className="arrow">{'>'}</span>
             </p>
           </div>
         </div>
@@ -163,16 +185,12 @@ const Index: React.FC = props => {
       <div className="section-support">
         <div className="support-content">
           <div className="content-desc support-desc">
-            <h2>
-              你的所有捐助，都将用于支持我们的长臂猿保护项目，包括栖息地的修复、种群的动态监测，让保护区外的长臂猿可以拥有更好的生活。
-              <br />
-              支持长臂猿保护有一万种姿势，而捐赠，或许是最简单的一种。
-            </h2>
+            <h2>{intl.formatMessage({ id: 'home.support.content' })}</h2>
           </div>
           <div className="content-button-container">
             <Button className="content-button">
               <Link to="/support/month">
-                <b>支持我们</b>
+                <b>{intl.formatMessage({ id: 'home.support' })}</b>
               </Link>
             </Button>
           </div>

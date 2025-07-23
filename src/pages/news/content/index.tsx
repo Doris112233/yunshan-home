@@ -16,7 +16,7 @@ const Tianxing: React.FC = props => {
           item
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={3}
         >
@@ -24,7 +24,7 @@ const Tianxing: React.FC = props => {
             item
             container
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
             spacing={1}
           >
@@ -34,7 +34,7 @@ const Tianxing: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -51,7 +51,7 @@ const Tianxing: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -70,7 +70,7 @@ const Tianxing: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -87,7 +87,7 @@ const Tianxing: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -104,7 +104,7 @@ const Tianxing: React.FC = props => {
               sm={2}
               container
               direction="row"
-              justify="center"
+              justifyContent="center"
               alignItems="center"
               spacing={1}
             >
@@ -122,7 +122,7 @@ const Tianxing: React.FC = props => {
             item
             container
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
             spacing={1}
           ></Grid>
@@ -142,7 +142,7 @@ const Tianxing: React.FC = props => {
         <Grid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={2}
         >

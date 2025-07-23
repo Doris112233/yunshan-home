@@ -1,14 +1,14 @@
-import wechat from './assets/contact/wechat.png';
-import wechat_qr from './assets/contact/wechat_qr.jpg';
-import weibo from './assets/contact/weibo.png';
-import weibo_qr from './assets/contact/weibo_qr.png';
-import tiktok from './assets/contact/tiktok.png';
-import tiktok_qr from './assets/contact/tiktok_qr.jpg';
-import bilibili from './assets/contact/bilibili.png';
-import bilibili_qr from './assets/contact/bilibili_qr.jpg';
-import rectlogo from './assets/contact/rectlogo.png';
-import xiaohongshu from './assets/contact/xiaohongshu.png';
-import xiaohongshu_qr from './assets/contact/xiaohongshu_qr.png';
+import wechat from '../../public/images/contact/wechat.png';
+import wechat_qr from '../../public/images/contact/wechat_qr.jpg';
+import weibo from '../../public/images/contact/weibo.png';
+import weibo_qr from '../../public/images/contact/weibo_qr.png';
+import tiktok from '../../public/images/contact/tiktok.png';
+import tiktok_qr from '../../public/images/contact/tiktok_qr.jpg';
+import bilibili from '../../public/images/contact/bilibili.png';
+import bilibili_qr from '../../public/images/contact/bilibili_qr.jpg';
+import rectlogo from '../../public/images/contact/rectlogo.png';
+import xiaohongshu from '../../public/images/contact/xiaohongshu.png';
+import xiaohongshu_qr from '../../public/images/contact/xiaohongshu_qr.png';
 
 const data = [
   {

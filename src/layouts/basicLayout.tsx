@@ -10,10 +10,13 @@ import data from '@/data';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import { LoadingProvider } from '@/components/LoadingContext';
+import GlobalLoading from '@/components/GlobalLoading';
+import NavigationLoadingHandler from '@/components/NavigationLoadingHandler';
 
 const BasicLayout: React.FC = props => {
   const intl = useIntl();
-  const [pathname, setPathname] = useState(props.location.pathname);
+  const [pathname, setPathname] = useState('/');
 
   const changeLocales = () => {
     const locales = getLocale();
@@ -75,34 +78,8 @@ const BasicLayout: React.FC = props => {
           ],
         },
         {
-          path: '/us',
-          name: intl.formatMessage({ id: 'menu.us' }),
-          routes: [
-            {
-              path: '/us/will',
-              name: intl.formatMessage({ id: 'menu.us.will' }),
-            },
-            {
-              path: '/us/council',
-              name: intl.formatMessage({ id: 'menu.us.council' }),
-            },
-            {
-              path: '/us/report',
-              name: intl.formatMessage({ id: 'menu.us.report' }),
-            },
-            {
-              path: '/us/timeline',
-              name: intl.formatMessage({ id: 'menu.us.timeline' }),
-            },
-            {
-              path: '/us/partner',
-              name: intl.formatMessage({ id: 'menu.us.partner' }),
-            },
-            {
-              path: '/us/contact',
-              name: intl.formatMessage({ id: 'menu.us.contact' }),
-            },
-          ],
+          path: '/us/overview',
+          name: intl.formatMessage({ id: 'menu.us.overview' }),
         },
         {
           path: '/support',
@@ -142,96 +119,100 @@ const BasicLayout: React.FC = props => {
     },
   ];
   return (
-    <ProLayout
-      {...props}
-      {...routesProps}
-      layout="topmenu"
-      navTheme="light"
-      fixedHeader={true}
-      title="云山保护"
-      logo={logo}
-      onMenuHeaderClick={() => history.push('/')}
-      location={{
-        pathname,
-      }}
-      menuItemRender={(item, dom) => (
-        <Link
-          to={item.path}
-          onClick={() => {
-            setPathname(item.path || '/');
-          }}
-        >
-          {dom}
-        </Link>
-      )}
-      menuHeaderRender={(logo, title) => (
-        <Link
-          to="/"
-          onClick={() => {
-            setPathname('/');
-          }}
-        >
-          <div className="logo-container">{logo}</div>
-        </Link>
-      )}
-      rightContentRender={() => (
-        <Button
-          onClick={changeLocales}
-          type="dashed"
-          style={{ marginRight: '1rem' }}
-        >
-          {localesBtn()}
-        </Button>
-      )}
-      footerRender={() => {
-        return (
-          <div className="section-footer">
-            <div className="footer_left">
-              <div className="follow">
-                <h4>{intl.formatMessage({ id: 'footer.follow' })}</h4>
+    <LoadingProvider>
+      <NavigationLoadingHandler />
+      <ProLayout
+        {...props}
+        {...routesProps}
+        layout="topmenu"
+        navTheme="light"
+        fixedHeader={true}
+        title="云山保护"
+        logo={logo}
+        onMenuHeaderClick={() => history.push('/')}
+        location={{
+          pathname,
+        }}
+        menuItemRender={(item, dom) => (
+          <Link
+            to={item.path || '/'}
+            onClick={() => {
+              setPathname(item.path || '/');
+            }}
+          >
+            {dom}
+          </Link>
+        )}
+        menuHeaderRender={(logo, title) => (
+          <Link
+            to="/"
+            onClick={() => {
+              setPathname('/');
+            }}
+          >
+            <div className="logo-container">{logo}</div>
+          </Link>
+        )}
+        rightContentRender={() => (
+          <Button
+            onClick={changeLocales}
+            type="dashed"
+            style={{ marginRight: '1rem' }}
+          >
+            {localesBtn()}
+          </Button>
+        )}
+        footerRender={() => {
+          return (
+            <div className="section-footer">
+              <div className="footer_left">
+                <div className="follow">
+                  <h4>{intl.formatMessage({ id: 'footer.follow' })}</h4>
+                </div>
+                <Grid
+                  container
+                  spacing={3}
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  {socialMedia.map(item => (
+                    <Grid item key={item.key}>
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          className="social-icon"
+                          src={item.icon}
+                          alt={item.key}
+                        />
+                      </a>
+                    </Grid>
+                  ))}
+                </Grid>
               </div>
-              <Grid
-                container
-                spacing={3}
-                justifyContent="center"
-                alignItems="center"
-              >
-                {socialMedia.map(item => (
-                  <Grid item key={item.key}>
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="social-icon"
-                        src={item.icon}
-                        alt={item.key}
-                      />
-                    </a>
-                  </Grid>
-                ))}
-              </Grid>
-            </div>
 
-            <div className="footer_right">
-              <div className="contact">
-                <h4 style={{ textAlign: 'center' }}>
-                  {intl.formatMessage({ id: 'footer.contact' })}
-                </h4>
-                <p>{intl.formatMessage({ id: 'footer.address' })}</p>
-                <p>{intl.formatMessage({ id: 'footer.tel' })}</p>
-                <p>{intl.formatMessage({ id: 'footer.site' })}</p>
-                <p>{intl.formatMessage({ id: 'footer.email' })}</p>
+              <div className="footer_right">
+                <div className="contact">
+                  <h4 style={{ textAlign: 'center' }}>
+                    {intl.formatMessage({ id: 'footer.contact' })}
+                  </h4>
+                  <p>{intl.formatMessage({ id: 'footer.address' })}</p>
+                  <p>{intl.formatMessage({ id: 'footer.tel' })}</p>
+                  <p>{intl.formatMessage({ id: 'footer.site' })}</p>
+                  <p>{intl.formatMessage({ id: 'footer.email' })}</p>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      }}
-    >
-      {props.children}
-      <BasicAnchor></BasicAnchor>
-    </ProLayout>
+          );
+        }}
+      >
+        {props.children}
+        <BasicAnchor></BasicAnchor>
+      </ProLayout>
+      <GlobalLoading />
+    </LoadingProvider>
   );
 };
 

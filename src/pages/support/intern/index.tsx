@@ -14,7 +14,7 @@ const Tianxing: React.FC = props => {
         <Grid
           container
           direction="column"
-          justify="center"
+          justifyContent="center"
           alignItems="center"
           spacing={2}
         >
@@ -42,7 +42,6 @@ const Tianxing: React.FC = props => {
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
             远程线上工作，定期处理红外影像数据，可自行选择参与时间段。
-
           </Grid>
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
@@ -62,12 +61,12 @@ const Tianxing: React.FC = props => {
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            · 保证每月不少于一次的任务包处理（每个任务包工作量约4小时，需在一周内完成）；
+            ·
+            保证每月不少于一次的任务包处理（每个任务包工作量约4小时，需在一周内完成）；
             <br />
             · 耐心、细心，面对大量空拍时也能以认真的态度寻找动物；
-            <br />
-
-            · 认可野保事业并以科学、严谨的态度对待保护工作，遵守数据保密协议。
+            <br />·
+            认可野保事业并以科学、严谨的态度对待保护工作，遵守数据保密协议。
           </Grid>
         </Grid>
       </Card>

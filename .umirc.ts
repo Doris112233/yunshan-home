@@ -35,7 +35,7 @@ export default defineConfig({
       .use('file-loader?')
       .loader(require.resolve('file-loader'));
   },
-  favicon: '.favicon.ico',
+  favicon: '/favicon.ico',
   routes: [
     {
       path: '/',
@@ -53,18 +53,6 @@ export default defineConfig({
               path: '/protect/knowledge',
               component: '@/pages/protect/knowledge/index',
             },
-            {
-              path: '/protect/tianxing',
-              component: '@/pages/protect/tianxing/index',
-            },
-            {
-              path: '/protect/concolor',
-              component: '@/pages/protect/concolor/index',
-            },
-            {
-              path: '/protect/investigate',
-              component: '@/pages/protect/investigate/index',
-            },
           ],
         },
         {
@@ -75,12 +63,16 @@ export default defineConfig({
               component: '@/pages/programs/overview/index',
             },
             {
-              path: '/programs/investigation/canteen',
-              component: '@/pages/programs/investigation/canteen/index',
+              path: '/programs/investigation',
+              component: '@/pages/programs/investigation/index',
             },
             {
-              path: '/programs/community/education',
-              component: '@/pages/programs/community/education/index',
+              path: '/programs/community',
+              component: '@/pages/programs/community/index',
+            },
+            {
+              path: '/programs/public',
+              component: '@/pages/programs/public/index',
             },
           ],
         },
@@ -88,6 +80,7 @@ export default defineConfig({
         {
           path: '/us',
           routes: [
+            { path: '/us/overview', component: '@/pages/us/overview/index' },
             { path: '/us/will', component: '@/pages/us/will/index' },
             { path: '/us/council', component: '@/pages/us/council/index' },
             { path: '/us/report', component: '@/pages/report/index' },
