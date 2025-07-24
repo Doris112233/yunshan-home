@@ -29,7 +29,7 @@ const audios = [
   new Audio(lar),
 ];
 
-const ImgViewer = props => {
+const ImgViewer = (props: { src: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   return (
     <div>
@@ -47,10 +47,10 @@ const ImgViewer = props => {
   );
 };
 
-export default props => {
+export default (props: { location: { query: { id: string } } }) => {
   const queryId = props.location.query.id;
   const intl = useIntl();
-  const [selected, setSelected] = useState<number>(queryId || 0);
+  const [selected, setSelected] = useState<number>(parseInt(queryId) || 0);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   const { Item } = Descriptions;
