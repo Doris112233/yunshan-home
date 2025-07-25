@@ -1,29 +1,17 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { useIntl, setLocale } from 'umi';
-import { Divider, Button } from 'antd';
-import {
-  Grid,
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActionArea,
-  Box,
-} from '@mui/material';
-import indexLog from '../../data/assets/index/indexLogo.png';
+import { Button } from 'antd';
+import { Box } from '@mui/material';
 import './index.less';
 import data from '../../data/index';
-import mediadata from '../../data/contact';
 import { Link, history } from 'umi';
-import { getLocale } from '@@/plugin-locale/localeExports';
-import Container from '@material-ui/core/Container';
-import { CaretRightOutlined, RightCircleOutlined } from '@ant-design/icons';
+import { CaretRightOutlined } from '@ant-design/icons';
 
 const ellipse1 = data.ellipse1;
 const ellipse2 = data.ellipse2;
 const ellipse3 = data.ellipse3;
 
-const Index: React.FC = props => {
+const Index: React.FC = (props) => {
   const intl = useIntl();
   const [expanded, setExpanded] = useState('wild');
 
@@ -133,7 +121,7 @@ const Index: React.FC = props => {
           </div>
         </div>
         <div className="work-right">
-          {cards.map(card => (
+          {cards.map((card) => (
             <div
               key={card.key}
               className={`work-card ${card.key} ${

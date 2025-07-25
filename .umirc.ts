@@ -96,10 +96,6 @@ export default defineConfig({
               path: '/support/month',
               component: '@/pages/support/donate/index',
             },
-            {
-              path: '/support/intern',
-              component: '@/pages/support/intern/index',
-            },
           ],
         },
         // legacy

@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useIntl, setLocale } from 'umi';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import { Card } from '@material-ui/core';
 import { Timeline as TimeL } from 'antd';
 import './index.less';
 import data from '../../../data/timeline';
 
-const Timeline: React.FC = props => {
+const Timeline: React.FC = (props) => {
   const intl = useIntl();
 
   const { Item } = TimeL;

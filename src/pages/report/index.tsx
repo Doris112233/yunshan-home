@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import { useIntl, setLocale } from 'umi';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import { Card as MCard } from '@material-ui/core';
-import { Slider, Card, Modal, Button } from 'antd';
+import Grid from '@mui/material/Grid';
+import { Slider, Modal, Button } from 'antd';
+import { useMediaQuery, useTheme } from '@mui/material';
+import type { SliderMarks } from 'antd/es/slider';
 import './index.less';
 import data from '../../data/report';
-import Hidden from '@material-ui/core/Hidden';
 
 interface ReportProps {
   initCurr: number;
 }
 
-const Report: React.FC<ReportProps> = props => {
+const Report: React.FC<ReportProps> = (props) => {
   const intl = useIntl();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   const [curr, setCurr] = useState<number>(props.initCurr ? props.initCurr : 0);
   const [picModal, setPicModal] = useState<boolean>(false);
@@ -22,12 +23,12 @@ const Report: React.FC<ReportProps> = props => {
     color: '#8da745',
   };
 
-  const masksBig = {};
-  const masksSmall = {};
+  const masksBig: SliderMarks = {};
+  const masksSmall: SliderMarks = {};
 
   data.forEach((item, index) => {
     masksBig[index] = {
-      style: curr >= index ? passedStyle : null,
+      style: curr >= index ? passedStyle : undefined,
       label: item.isAnnual ? (
         <strong style={{ fontSize: '16px' }}>
           {item.name + intl.formatMessage({ id: 'us.report.annual' })}
@@ -37,7 +38,7 @@ const Report: React.FC<ReportProps> = props => {
       ),
     };
     masksSmall[index] = {
-      style: curr >= index ? passedStyle : null,
+      style: curr >= index ? passedStyle : undefined,
       label: <div>{item.sm}</div>,
     };
   });
@@ -80,16 +81,13 @@ const Report: React.FC<ReportProps> = props => {
     <div className="report-container">
       <Grid
         container
-        xs={12}
-        sm={12}
-        md={10}
         direction="row"
         justifyContent="space-around"
         alignItems="center"
         style={{ background: '#ffffff', margin: 'auto', height: '100%' }}
       >
         <Grid item xs={4} sm={3} md={2} className="report-box">
-          <Hidden xsDown>
+          {!isMobile && (
             <div
               style={{ height: '70vh', overflow: 'scroll', marginLeft: '-4vh' }}
             >
@@ -106,8 +104,8 @@ const Report: React.FC<ReportProps> = props => {
                 max={data.length - 1}
               />
             </div>
-          </Hidden>
-          <Hidden smUp>
+          )}
+          {isMobile && (
             <div style={{ height: '70vh', overflow: 'scroll' }}>
               <Slider
                 style={{ height: '100vh' }}
@@ -122,7 +120,7 @@ const Report: React.FC<ReportProps> = props => {
                 max={data.length - 1}
               />
             </div>
-          </Hidden>
+          )}
         </Grid>
         <Grid
           item

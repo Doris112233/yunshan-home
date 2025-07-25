@@ -54,6 +54,21 @@ export default {
   'home.story.card1': '长臂猿食堂调查计划',
   'home.story.card2': '社区保护',
 
+  'about.overview.title': '关于云山',
+  'about.overview.content.1':
+    '目前中国唯一一家专注于长臂猿保护的公益机构。创始人为长臂猿研究专家、中山大学教授范朋飞、长臂猿保护专家阎璐、鸟类研究专家、野生动物摄影师赵超，2015年在云南大理注册成立。',
+  'about.overview.content.2':
+    '我们以保护长臂猿等中国的濒危旗舰物种为突破口，进而保护生物多样性最为丰富的中国西南森林生态系统，促进人与自然和谐共处。',
+  'about.overview.content.3':
+    '我们不仅关心长臂猿，也关心和长臂猿保护息息相关的人们。',
+
+  'about.menu.will': '使命愿景',
+  'about.menu.council': '理事会',
+  'about.menu.timeline': '大事记',
+  'about.menu.report': '年报月报',
+  'about.menu.contact': '联系我们',
+  'about.menu.partner': '合作伙伴',
+
   'about.mission': '使命',
   'about.vision': '愿景',
   'about.value': '价值观',
@@ -66,6 +81,8 @@ export default {
   'about.value.1': '科学 平等 合作 信任 可持续',
   'about.slogan.1': '和云山一起保护中国猿',
   'about.focusing.1': '十年内在社区保护地实现长臂猿种群净增长',
+
+  'about.council.title': '理事会及长期顾问',
 
   'protect.inChina.title': '长臂猿在中国',
   'protect.inChina.content.1':

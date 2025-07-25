@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useIntl, setLocale } from 'umi';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
+import Grid from '@mui/material/Grid';
 import data from '../../../data/donate';
-import { Card } from 'antd';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.less';
@@ -14,7 +12,7 @@ import './index.less';
 
 SwiperCore.use([Navigation, Pagination]);
 
-const Donate: React.FC = props => {
+const Donate: React.FC = (props) => {
   const intl = useIntl();
 
   const renderSwiper = () => {
@@ -26,8 +24,14 @@ const Donate: React.FC = props => {
           autoplay={{ delay: 3000 }}
           pagination={{ clickable: true }}
           navigation
+          style={{
+            width: '100%',
+            height: '100%',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
         >
-          {data.map(item => {
+          {data.map((item) => {
             return (
               <SwiperSlide>
                 <div>
@@ -43,16 +47,7 @@ const Donate: React.FC = props => {
 
   return (
     <div className="full-page">
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Grid item xs={12} sm={10} md={8}>
-          {renderSwiper()}
-        </Grid>
-      </Grid>
+      <div className="donate-container">{renderSwiper()}</div>
     </div>
   );
 };

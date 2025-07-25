@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useIntl } from 'umi';
 import { Button, Tabs, Card, Descriptions, Typography } from 'antd';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
 import data from '../../../data/archive';
 import dataArchaeo from '../../../data/archaeo';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -137,7 +137,7 @@ export default (props: { location: { query: { id: string } } }) => {
                 style={{ marginTop: 30 }}
                 tabPosition="top"
                 type="card"
-                items={data.map(item => ({
+                items={data.map((item) => ({
                   key: item.key.toString(),
                   label: intl.formatMessage({ id: item.name }),
                   children: null,

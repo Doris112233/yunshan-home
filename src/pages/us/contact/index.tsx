@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useIntl, setLocale } from 'umi';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
+import Grid from '@mui/material/Grid';
 import { Card, Divider } from 'antd';
 import './index.less';
 import data from '../../../data/contact';
@@ -12,7 +11,7 @@ import {
   MailOutlined,
 } from '@ant-design/icons';
 
-const Contact: React.FC = props => {
+const Contact: React.FC = (props) => {
   const intl = useIntl();
 
   const pics = data[0];

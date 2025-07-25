@@ -1,7 +1,6 @@
 import React from 'react';
 import { useIntl, setLocale } from 'umi';
-import Grid from '@material-ui/core/Grid';
-// import { Card, Divider } from 'antd';
+import Grid from '@mui/material/Grid';
 import { Button } from 'antd';
 import { Link } from 'umi';
 import './index.less';

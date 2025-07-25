@@ -62,6 +62,21 @@ export default {
   'home.work.card.public.short': 'Public',
   'home.work.card.public.long': 'Public Advocacy',
 
+  'about.menu.will': 'Mission & Vision',
+  'about.menu.council': 'Council',
+  'about.menu.timeline': 'Timeline',
+  'about.menu.report': 'Report',
+  'about.menu.contact': 'Contact',
+  'about.menu.partner': 'Partner',
+
+  'about.overview.title': 'About Cloudmountain',
+  'about.overview.content.1':
+    'Cloud Mountain Conservation  is the only Non-Governmental Organization in China dedicated to gibbon conservation. Established in 2015 in Dali, Yunnan, our organization was founded by gibbon research expert Professor Fan Pengfei from Sun Yat-sen University, gibbon conservation specialist Yan Lu, and ornithologist/wildlife photographer Zhao Chao.',
+  'about.overview.content.2':
+    'We focus on protecting gibbons and other endangered flagship species in China as a starting point, thereby safeguarding the biodiversity-rich forest ecosystems of Southwest China and promoting harmonious coexistence between humans and nature.',
+  'about.overview.content.3':
+    'We care not only about gibbons, but also about the communities that are closely connected to gibbon conservation.',
+
   'about.mission': 'Mission',
   'about.vision': 'Vision',
   'about.value': 'Value',
@@ -76,6 +91,8 @@ export default {
   'about.slogan.1': ' To Protect Chinese Gibbon with Cloudmountain',
   'about.focusing.1':
     'Achieve the growth of gibbon populations in community preservation areas within 10 years',
+
+  'about.council.title': 'Board of Directors & Long-term Advisors',
 
   'protect.inChina.title': 'Gibbons in China',
   'protect.inChina.content.1':

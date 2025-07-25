@@ -1,15 +1,14 @@
 import React from 'react';
-import { useIntl, setLocale } from 'umi';
-import Grid from '@material-ui/core/Grid';
-// import Container from '@material-ui/core/Container';
-import { Card } from '@material-ui/core';
-import { Card as ACard, Divider, Avatar, Tag } from 'antd';
-// import { ClockCircleOutlined } from '@ant-design/icons';
+import { useIntl, setLocale, getLocale } from 'umi';
+import Grid from '@mui/material/Grid';
+import { Divider, Avatar, Tag } from 'antd';
 import './index.less';
-import data from '../../../data/council';
+import getCouncilData from '../../../data/council';
 
-const Council: React.FC = props => {
+const Council: React.FC = (props) => {
   const intl = useIntl();
+  const currentLocale = getLocale();
+  const data = getCouncilData(currentLocale);
 
   const renderPeopleCard = (person: any) => {
     return (
@@ -39,7 +38,20 @@ const Council: React.FC = props => {
             })}
           </Grid>
           <Grid item xs={12}>
-            <div className="council-desc">{person.desc}</div>
+            <div className="council-desc">
+              {/* {person.desc[0]} */}
+              {Array.isArray(person.desc) ? (
+                <ul style={{ margin: 0, paddingLeft: '20px' }}>
+                  {person.desc.map((item: string, index: number) => (
+                    <li key={index} style={{ marginBottom: '8px' }}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p style={{ margin: 0 }}>{person.desc}</p>
+              )}
+            </div>
           </Grid>
         </Grid>
       </Grid>
@@ -78,7 +90,20 @@ const Council: React.FC = props => {
             })}
           </Grid>
           <Grid item>
-            <div className="council-desc">{person.desc}</div>
+            <div className="council-desc">
+              {person.desc[0]}
+              {Array.isArray(person.desc) ? (
+                <ul style={{ margin: 0, paddingLeft: '20px' }}>
+                  {person.desc.slice(1).map((item: string, index: number) => (
+                    <li key={index} style={{ marginBottom: '8px' }}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p style={{ margin: 0 }}>{person.desc}</p>
+              )}
+            </div>
           </Grid>
         </Grid>
       </Grid>
@@ -95,7 +120,9 @@ const Council: React.FC = props => {
         spacing={2}
       >
         <Grid item>
-          <div className="council-title">理事会</div>
+          <div className="council-title">
+            {intl.formatMessage({ id: 'about.council.title' })}
+          </div>
         </Grid>
         <Grid item xs={12}>
           {renderBossCard(data[0])}
