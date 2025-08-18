@@ -9,6 +9,7 @@ import Report from '../../report';
 import { useState } from 'react';
 import { useIntl } from 'umi';
 import { useMediaQuery } from 'react-responsive';
+import Honor from '../honor';
 
 const sectionComponents = {
   will: <Will />,
@@ -17,6 +18,7 @@ const sectionComponents = {
   timeline: <Timeline />,
   partner: <Partner />,
   contact: <Contact />,
+  honor: <Honor />,
 };
 
 export default function Overview() {
@@ -48,6 +50,10 @@ export default function Overview() {
     {
       key: 'partner',
       label: intl.formatMessage({ id: 'about.menu.partner' }),
+    },
+    {
+      key: 'honor',
+      label: intl.formatMessage({ id: 'about.menu.honor' }),
     },
     {
       key: 'contact',

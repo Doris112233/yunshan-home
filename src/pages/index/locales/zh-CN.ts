@@ -70,6 +70,7 @@ export default {
   'about.menu.report': '年报月报',
   'about.menu.contact': '联系我们',
   'about.menu.partner': '合作伙伴',
+  'about.menu.honor': '荣誉',
 
   'about.mission': '使命',
   'about.vision': '愿景',
@@ -553,4 +554,6 @@ export default {
   'us.partner.6.desc':
     '成立于2008年，由阿拉善SEE生态协会发起成立，2014年升级为公募基金会，并三度蝉联5A级社会组织荣誉（最高级别）。',
   'us.partner.6.link': 'https://foundation.see.org.cn/about/foundation/',
+
+  'us.honor.title': '荣誉',
 };

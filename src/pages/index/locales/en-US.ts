@@ -70,6 +70,7 @@ export default {
   'about.menu.report': 'Report',
   'about.menu.contact': 'Contact',
   'about.menu.partner': 'Partner',
+  'about.menu.honor': 'Honor',
 
   'about.overview.title': 'About Cloudmountain',
   'about.overview.content.1':
@@ -592,4 +593,6 @@ export default {
   'us.partner.6.desc':
     'Initiated by SEE Foundation in 2008, upgraded to public fundraising status in 2014, and consecutively awarded 5A-level social organization honors.',
   'us.partner.6.link': 'https://foundation.see.org.cn/about/foundation/',
+
+  'us.honor.title': 'Honors',
 };
