@@ -63,7 +63,7 @@ const Index: React.FC = (props) => {
             }}
           >
             <Button>
-              <Link to="/us/will">
+              <Link to="/us/overview">
                 <b>{intl.formatMessage({ id: 'home.button.learn' })}</b>
               </Link>
             </Button>
@@ -152,7 +152,9 @@ const Index: React.FC = (props) => {
         <div className="story-cards">
           <div className="story-card">
             <div className="story-card-image">
-              <img src={data.story1} alt="story1" />
+              <Link to="/programs/investigation">
+                <img src={data.story1} alt="story1" />
+              </Link>
             </div>
             <p>
               {intl.formatMessage({ id: 'home.story.card1' })}{' '}
@@ -161,7 +163,9 @@ const Index: React.FC = (props) => {
           </div>
           <div className="story-card">
             <div className="story-card-image">
-              <img src={data.story2} alt="story2" />
+              <Link to="/programs/community">
+                <img src={data.story2} alt="story2" />
+              </Link>
             </div>
             <p>
               {intl.formatMessage({ id: 'home.story.card2' })}{' '}

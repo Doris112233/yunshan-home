@@ -84,7 +84,7 @@ const Timeline: React.FC = (props) => {
     <div className="row example-split">
       {/* <Card> */}
       <div className="col-md-12 example-title">
-        <h2>云山大事记</h2>
+        <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>云山大事记</h2>
       </div>
       {newTimeline()}
       {/* </Card> */}

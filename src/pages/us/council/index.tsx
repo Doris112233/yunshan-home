@@ -136,10 +136,10 @@ const Council: React.FC = (props) => {
           alignItems="center"
           spacing={2}
         >
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[1])}
           </Grid>
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[2])}
           </Grid>
         </Grid>
@@ -151,10 +151,10 @@ const Council: React.FC = (props) => {
           alignItems="center"
           spacing={2}
         >
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[3])}
           </Grid>
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[4])}
           </Grid>
         </Grid>
@@ -167,10 +167,10 @@ const Council: React.FC = (props) => {
           alignItems="center"
           spacing={2}
         >
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[5])}
           </Grid>
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[6])}
           </Grid>
         </Grid>
@@ -182,10 +182,10 @@ const Council: React.FC = (props) => {
           alignItems="center"
           spacing={2}
         >
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[7])}
           </Grid>
-          <Grid xs={12} sm={12} md={5} item>
+          <Grid xs={12} sm={12} md={12} lg={5} item>
             {renderPeopleCard(data[8])}
           </Grid>
         </Grid>

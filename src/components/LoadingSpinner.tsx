@@ -2,6 +2,7 @@ import React from 'react';
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
 import './LoadingSpinner.less';
+import { useIntl } from 'umi';
 
 interface LoadingSpinnerProps {
   visible: boolean;
@@ -12,7 +13,7 @@ interface LoadingSpinnerProps {
 const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
   visible,
   size = 'large',
-  tip = '页面加载中...',
+  tip = useIntl().formatMessage({ id: 'loading.tip' }),
 }) => {
   if (!visible) return null;
 

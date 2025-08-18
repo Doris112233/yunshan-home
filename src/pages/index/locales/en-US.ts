@@ -1,4 +1,6 @@
 export default {
+  'loading.tip': 'Loading...',
+
   //Menu
   'menu.title': 'Cloud Mountain',
   'menu.home': 'Home',
@@ -559,4 +561,35 @@ export default {
   'us.report.s2': 'Season 2',
   'us.report.s3': 'Season 3',
   'us.report.s4': 'Season 4',
+
+  'us.partner.title': 'Out Partners',
+  'us.partner.desc':
+    'Throughout our decade-long journey to protect gibbons, we have been privileged to collaborate with numerous dedicated partners who stand with us in this critical mission:',
+  'us.partner.list':
+    'Foundations & NGOs; Government partners; Local communities (Lishu & Lama River ethnic communities along the China-Myanmar border); Researchers; Corporate supporters; Individual donors & volunteers',
+  'us.partner.1.name': 'IUCN',
+  'us.partner.1.desc':
+    'The International Union for Conservation of Nature (IUCN) is an international organization working in the field of nature conservation and sustainable use of natural resources.',
+  'us.partner.1.link': 'https://iucn.org/',
+  'us.partner.2.name': 'Zhilan Foundation',
+  'us.partner.2.desc':
+    'Supports grassroots conservationists through small, flexible, and long-term funding to promote sustainable development. Provides financial, technical, and intellectual resources for practical conservation actions.',
+  'us.partner.2.link': 'https://www.izhilan.cn/about.jsp',
+  'us.partner.3.name':
+    'IUCN SSC SSA (IUCN SSC Primate Specialist Group’s Section on Small Apes)',
+  'us.partner.3.desc':
+    "The SSA is a community of over 120 experts from 23 countries with the world's greatest repository of gibbon knowledge.",
+  'us.partner.3.link': 'https://gibbons.asia/what-we-do/',
+  'us.partner.4.name': 'China Primatological Society (CPS)',
+  'us.partner.4.desc':
+    "The professional academic platform for primatologists in China, facilitating research, conservation, and public education on primates. Established in 2017 in Xi'an with 1,000+ members, CPS serves as the executive committee member of the International Primatological Society, actively contributing to global primate conservation.",
+  'us.partner.4.link': 'https://cps.nwu.edu.cn/',
+  'us.partner.5.name': 'China Environmental Protection Foundation (CEPF)',
+  'us.partner.5.desc':
+    'A national 5A-level public fundraising foundation (highest accreditation) established in 1993 under the Ministry of Ecology and Environment.',
+  'us.partner.5.link': 'http://www.cepf.org.cn/',
+  'us.partner.6.name': 'Beijing Entrepreneurs Environmental Foundation (BEEF)',
+  'us.partner.6.desc':
+    'Initiated by SEE Foundation in 2008, upgraded to public fundraising status in 2014, and consecutively awarded 5A-level social organization honors.',
+  'us.partner.6.link': 'https://foundation.see.org.cn/about/foundation/',
 };

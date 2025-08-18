@@ -1,4 +1,6 @@
 export default {
+  'loading.tip': '页面加载中...',
+
   'menu.title': '云山保护',
   'menu.home': '主页',
   'menu.protect': '关于长臂猿',
@@ -523,4 +525,32 @@ export default {
   'us.report.s2': '第二季度',
   'us.report.s3': '第三季度',
   'us.report.s4': '第四季度',
+
+  'us.partner.title': '合作伙伴',
+  'us.partner.desc':
+    '在十年的保护之旅中，我们有幸拥有了众多并肩作战的合作伙伴，包括基金会、政府、社会机构以及我们项目地所在的中缅边境的傈僳族社区，梨树与拉马河社区，也包括在项目中支持我们的志愿者、捐赠者以及关注者们。',
+  'us.partner.list': '以下是部分名单：',
+  'us.partner.1.name': 'IUCN',
+  'us.partner.1.desc': '一个致力于自然保护及可持续自然资源利用议题的国际组织',
+  'us.partner.1.link': 'https://iucn.org/',
+  'us.partner.2.name': '质兰基金会',
+  'us.partner.2.desc':
+    '藉由为一线研究与实践者提供小额、灵活、长期的资金支持，来实现绿色和可持续的发展。质兰通过多种资助形式，为真正的行动者提供所需的资金、技术和智力支持。',
+  'us.partner.2.link': 'https://www.izhilan.cn/about.jsp',
+  'us.partner.3.name': 'IUCN SSC SSA',
+  'us.partner.3.desc':
+    'SSA 是一个由来自 23 个国家的 120 多名专家组成的团体，拥有世界上最丰富的长臂猿知识。',
+  'us.partner.3.link': 'https://gibbons.asia/what-we-do/',
+  'us.partner.4.name': '中国动物学会灵长类学分会',
+  'us.partner.4.desc':
+    '中国动物学会灵长类学分会是专业从事灵长类动物研究、保护和科普的人员进行学术交流的平台。灵长类学分会2017年在西安成立，目前成员超过1000人。学会是国际灵长类学会的执行委员，直接参与灵长类学国际事务，在国际舞台上发出中国声音，为全球灵长类科研和保护工作做出了积极推动和重要贡献。',
+  'us.partner.4.link': 'https://cps.nwu.edu.cn/',
+  'us.partner.5.name': '中华环境保护基金会',
+  'us.partner.5.desc':
+    '成立于1993年4月，是民政部注册、生态环境部领导的从事环境保护公益事业的全国性5A级公募基金会',
+  'us.partner.5.link': 'http://www.cepf.org.cn/',
+  'us.partner.6.name': '北京企业家环保基金会',
+  'us.partner.6.desc':
+    '成立于2008年，由阿拉善SEE生态协会发起成立，2014年升级为公募基金会，并三度蝉联5A级社会组织荣誉（最高级别）。',
+  'us.partner.6.link': 'https://foundation.see.org.cn/about/foundation/',
 };
